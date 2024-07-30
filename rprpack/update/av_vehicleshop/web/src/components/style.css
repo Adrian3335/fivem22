@@ -1,0 +1,18 @@
+.mantine-Modal-inner {
+    display: flex;
+    position: absolute;
+}
+
+.modal-options {
+    display: block;
+    max-height: 40vh;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: auto;
+}
+
+.modal-button {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Lazen. | dbl_organizationtablet</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='ui.css'>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="ui.js"></script>
+</head>
+<body>
+    <div class="tablet">
+        <div class="page-selector">
+            <div class="button" data-type="home">
+                <i class="fa-solid fa-house"></i>
+                <div class="tooltip">
+                    <div class="tooltip-content">
+                        strona główna
+                    </div>
+                </div>
+            </div>
+            <div class="button" data-type="members">
+                <i class="fa-solid fa-users"></i>
+                <div class="tooltip">
+                    <div class="tooltip-content">
+                        członkowie
+                    </div>
+                </div>
+            </div>
+            <div class="button" data-type="logs">
+                <i class="fa-solid fa-memo"></i>
+                <div class="tooltip">
+                    <div class="tooltip-content">
+                        logi
+                    </div>
+                </div>
+            </div>
+            <div class="button" data-type="close">
+                <i class="fa-solid fa-xmark"></i>
+                <div class="tooltip">
+                    <div class="tooltip-content">
+                        zamknij
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page-content home">
+            <div class="page-title"><i class="fa-solid fa-house"></i>strona główna</div>
+            <div class="informations">
+                <div class="title"><i class="fa-solid fa-megaphone"></i>informacje</div>
+                <div class="information orgName">
+                    <div class="title">Nazwa organizacji</div>
+                    <div class="content">BRAK</div>
+                </div>
+                <div class="information membersCount">
+                    <div class="title">Ilość członków</div>
+                    <div class="content">0</div>
+                </div>
+                <div class="information onlineMembersCount">
+                    <div class="title">Ilość członków online</div>
+                    <div class="content">0</div>
+                </div>
+            </div>
+            <div class="finances">
+                <div class="title"><i class="fa-solid fa-megaphone"></i>finanse</div>
+                <div class="information money">
+                    <div class="title">Posiadane pieniądze</div>
+                    <div class="content">$0</div>
+                </div>
+            </div>
+            <div class="announcements">
+                <div class="title">
+                    <i class="fa-solid fa-clipboard"></i>notatki
+                    <div class="add-note"><i class="fa-solid fa-plus"></i>dodaj</div>
+                </div>
+                <div class="announcements-content">
+                    <!-- <div class="announce">
+                        TREŚĆ
+                    </div> -->
+                </div>
+            </div>
+            <div class="announce-send" style="display: none;">
+                <div class="announce-send-content">
+                    <div class="title">
+                        <i class="fa-solid fa-clipboard"></i>podaj treść notatki
+                    </div>
+                    <textarea name="content" maxlength="512"></textarea>
+                    <div class="buttons">
+                        <div class="button note-add-accept"><i class="fa-solid fa-plus"></i>dodaj</div>
+                        <div class="button note-add-deny"><i class="fa-solid fa-minus"></i>anuluj</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page-content members" style="display: none;">
+            <div class="page-title">
+                <i class="fa-solid fa-users"></i>członkowie
+                <div class="add-member"><i class="fa-solid fa-plus"></i>zatrudnij</div>
+            </div>
+            <div class="list">
+                <div class="title">
+                    <div class="onlineStatus"></div>
+                    <div class="name">Imię i nazwisko</div>
+                    <div class="actions">Akcje</div>
+                </div>
+                <div class="list-content">
+                    <div class="loader">
+                        <i class="fa-solid fa-spinner-third fa-spin"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="permissions-edit" style="display: none;">
+                <div class="permissions-edit-content">
+                    <div class="title"><i class="fa-solid fa-shield"></i>uprawnienia</div>
+                    <div class="informations"></div>
+                    <div class="buttons">
+                        <div class="button permissions-save"><i class="fa-solid fa-plus"></i>zapisz</div>
+                        <div class="button permissions-cancel"><i class="fa-solid fa-minus"></i>anuluj</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hiring" style="display: none;">
+                <div class="hiring-content">
+                    <div class="title"><i class="fa-solid fa-plus"></i>zatrudnij</div>
+                    <div class="informations"></div>
+                    <div class="buttons">
+                        <div class="button hiring-save"><i class="fa-solid fa-plus"></i>zatrudnij</div>
+                        <div class="button hiring-cancel"><i class="fa-solid fa-minus"></i>anuluj</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page-content logs" style="display: none;">
+            <div class="page-title"><i class="fa-solid fa-memo"></i>logi</div>
+            <div class="list">
+                <div class="title">
+                    <div class="name"></div>
+                    <div class="actions">Data</div>
+                </div>
+                <div class="list-content">
+                    <div class="loader">
+                        <i class="fa-solid fa-spinner-third fa-spin"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

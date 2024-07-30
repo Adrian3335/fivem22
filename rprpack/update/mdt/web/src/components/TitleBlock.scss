@@ -1,0 +1,28 @@
+.title-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-bottom: 15px;
+
+    .title-text {
+        color: #1E2839;
+        font-size: 15px;
+        width: auto;
+        text-transform: uppercase;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        white-space: nowrap;
+        margin-right: 5px;
+    }
+
+    .title-line {
+        height: 2px;
+        position: relative;
+        width: 100%;
+        // width: 100%;
+        background-color: #1E2839;
+    }
+
+}

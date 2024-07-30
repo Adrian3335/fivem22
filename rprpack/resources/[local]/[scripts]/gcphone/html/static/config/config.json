@@ -1,0 +1,368 @@
+{
+  "reseau": "CoCo Mobile",
+  "warningMessageCount": 999,
+  "themeColor": "#35bbd0",
+  "themeColorTitle": "#f7f7f7",
+  "colors": [
+    "#EF5350",
+    "#EC407A",
+    "#AB47BC",
+    "#7E57C2",
+    "#5C6BC0",
+    "#42A5F5",
+    "#29B6F6",
+    "#26C6DA",
+    "#26A69A",
+    "#66BB6A",
+    "#9CCC65",
+    "#D4E157",
+    "#FFCA28",
+    "#FFA726",
+    "#FF7043",
+    "#8D6E63",
+    "#78909C"
+  ],
+  "useFormatNumberFrance": true,
+  "useWebRTCVocal": false,
+  "RTCConfig": {
+    "iceServers": [
+      {
+        "urls": [
+          "turn:barrax.needrp.net"
+        ],
+        "username": "gcphone",
+        "credential": "gcphone"
+      }
+    ]
+  },
+  "//": "REQUIRES https://github.com/citizenfx/screenshot-basic otherwise set enableTakePhoto to false. Thanks to @GLDmACK for his Upload Service!!!",
+  "enableTakePhoto": true,
+  "fileUploadService_Url": "https://gcphone.herokuapp.com/uploads/upload",
+  "fileUploadService_Field": "image",
+  "background": {
+    "Domyślne": "iphone.jpg",
+    "Custom URL": "URL"
+  },
+  "background_default": {
+    "label": "Domyślne",
+    "value": "iphone.jpg"
+  },
+  "coque": {},
+  "sonido": {
+    "Astronomia": "ring.ogg",
+    "Crystallize": "Crystallize.ogg",
+    "Iphone 11": "iphone_11.ogg",
+    "XXXTentacion": "xtentacion.ogg",
+    "Dance Monkey": "dance_monkey.ogg",
+    "Don't Look Now": "dont-look-now",
+    "I'm a Gummy Bear": "gummybear.ogg",
+    "Non Copyright - Spectre": "Alan-Walker-Spectre.ogg",
+    "Non Copyright 2 - Mortals": "Warriyo-Mortals.ogg"
+  },
+  "coque_default": {
+    "label": "Iphone X2",
+    "value": "iphonex2.png"
+  },
+  "sonido_default": {
+    "label": "Iphone 11",
+    "value": "iphone_11.ogg"
+  },
+  "defaultContacts": [
+  ],
+  "serviceCall": [
+    {
+      "display": "LSPD",
+      "icon": "/html/static/img/icons_app/police.png",
+      "subMenu": [
+        {
+          "title": "Wyślij wiadomość",
+          "eventName": "esx_addons_gcphone:call",
+          "action":"sendMessage",
+          "type": {
+            "number": "sheriff"
+          }
+        },
+        {
+          "title": "Zadzwoń pod numer alarmowy",
+          "eventName": "gcphone:autoCallNumber",
+          "action":"call",
+          "type": {
+            "number": "911"
+          }
+        }
+      ]
+    },
+    {
+      "display": "EMT",
+      "backgroundColor": "red",
+      "icon": "/html/static/img/icons_app/ems.png",
+      "subMenu": [
+        {
+          "title": "Wyślij wiadomość",
+          "eventName": "esx_addons_gcphone:call",
+          "action":"sendMessage",
+          "type": {
+            "number": "ambulance"
+          }
+        }
+      ]
+    }
+  ],
+  
+  "photo": [
+    {
+      "simOwner": "56574",
+      "id": 1,
+      "time": 1648583063000.0,
+      "link": "https://media.discordapp.net/attachments/926183415903051806/958451577985847316/screenshot.jpg"
+    },
+    {
+      "simOwner": "56574",
+      "id": 2,
+      "time": 1648583365000.0,
+      "link": "https://media.discordapp.net/attachments/926183415903051806/958452843596107826/screenshot.jpg"
+    },
+    {
+      "simOwner": "56574",
+      "id": 3,
+      "time": 1648583371000.0,
+      "link": "https://media.discordapp.net/attachments/926183415903051806/958452869969874944/screenshot.jpg"
+    },
+    {
+      "simOwner": "56574",
+      "id": 4,
+      "time": 1648583374000.0,
+      "link": "https://media.discordapp.net/attachments/926183415903051806/958452882540212254/screenshot.jpg"
+    },
+    {
+      "simOwner": "56574",
+      "id": 5,
+      "time": 1648583377000.0,
+      "link": "https://media.discordapp.net/attachments/926183415903051806/958452895139901451/screenshot.jpg"
+    },
+    {
+      "simOwner": "56574",
+      "id": 6,
+      "time": 1648583379000.0,
+      "link": "https://media.discordapp.net/attachments/926183415903051806/958452903935373392/screenshot.jpg"
+    },
+    {
+      "simOwner": "56574",
+      "id": 7,
+      "time": 1648583484000.0,
+      "link": "https://media.discordapp.net/attachments/926183415903051806/958453343217414215/screenshot.jpg"
+    }
+  ],
+  "apps": [
+    {
+      "name": "Telefon",
+      "menuTitle": "visible",
+      "en_US__name": "Telefon",
+      "icons": "/html/static/img/icons_app/call.png",
+      "color": "rgb(0,0,0,0)",
+      "routeName": "appels",
+      "inHomePage": true
+    },
+    {
+      "name": "Wiadomości",
+      "menuTitle": "visible",
+      "en_US__name": "Wiadomości",
+      "icons": "/html/static/img/icons_app/sms.png",
+      "routeName": "messages",
+      "color": "rgb(0,0,0,0)",
+      "inHomePage": true,
+      "puceRef": "nbMessagesUnread"
+    },
+    {
+      "name": "Kontakty",
+      "menuTitle": "visible",
+      "en_US__name": "Kontakty",
+      "icons": "/html/static/img/icons_app/contacts.png",
+      "routeName": "contacts",
+      "color": "rgb(0,0,0,0)",
+      "inHomePage": false
+    },
+    {
+      "name": "Ustawienia",
+      "menuTitle": "visible",
+      "en_US__name": "Ustawienia",
+      "icons": "/html/static/img/icons_app/settings.png",
+      "routeName": "parametre",
+      "color": "rgb(0,0,0,0)",
+      "inHomePage": false
+    },
+    {
+      "name": "Zdjęcia",
+      "menuTitle": "visible",
+      "en_US__name": "Zdjęcia",
+      "icons": "/html/static/img/icons_app/gallery.png",
+      "routeName": "gallery",
+      "color": "rgb(0,0,0,0)",
+      "inHomePage": false
+    },
+    {
+      "name": "Kamera",
+      "menuTitle": "visible",
+      "en_US__name": "Kamera",
+      "icons": "/html/static/img/icons_app/photo.png",
+      "color": "rgb(0,0,0,0)",
+      "routeName": "photo"
+    },
+    {
+      "name": "Notes",
+      "menuTitle": "visible",
+      "en_US__name": "Notes",
+      "routeName": "notes",
+      "color": "rgb(0,0,0,0)",
+      "icons": "/html/static/img/icons_app/news.png"
+    }
+  ],
+  "defaultLanguage": "en_US",
+  "language": {
+    "en_US": {
+      "NAME": "Polski",
+      "PHONE_WARNING_MESSAGE": "Ostrzeżenie",
+      "PHONE_WARNING_MESSAGE_MESS": "Wiadomości",
+      "CONFIRM": "Potwierdź",
+      "CANCEL": "Anuluj",
+      "APP_CONFIG_TITLE": "Ustawienia",
+      "APP_CONFIG_MY_MUNBER": "Mój numer",
+      "APP_MESSAGE_SAVE_CONTACT": "Zapisz kontakt",
+      "APP_CONFIG_WALLPAPER": "Tapeta",
+      "APP_CONFIG_MOUSE_SUPPORT": "Wsparcie myszki",
+      "APP_CONFIG_CASE": "Pokrywa telefonu",
+      "APP_CONFIG_SOUND": "Dzwonek",
+      "APP_CONFIG_ZOOM": "Przybliżenie",
+      "APP_CONFIG_VOLUME": "Głośność",
+      "APP_CONFIG_LANGUAGE": "Język",
+      "APP_PHONE_CALL_ANONYMOUS": "Połączenie anonimowe",
+      "APP_CONFIG_RESET": "Format",
+      "APP_CONFIG_RESET_CONFIRM": "Usuń wszystko",
+      "APP_PHONE_CALL": "Zadzwoń",
+      "APP_PHONE_DELETE": "Usuń",
+      "APP_PHONE_DELETE_ALL": "Usuń wszystko",
+      "APP_PHONE_TITLE": "Telefon",
+      "APP_PHONE_MENU_FAVORITES": "Ulubione",
+      "APP_PHONE_MENU_RECENTS": "Ostatnie",
+      "APP_PHONE_MENU_CONTACTS": "Kontakty",
+      "APP_PHONE_ENTER_NUMBER": "Wprowadź numer",
+      "APP_BANK_TITLE": "Bank",
+      "APP_BOURSE_TITLE": "Giełda",
+      "APP_CONTACT_TITLE": "Dodaj kontakt",
+      "APP_CONTACT_NEW": "Nowy kontakt",
+      "APP_CONTACT_EDIT": "Zmień kontakt",
+      "APP_CONTACT_SAVE": "Zapisz",
+      "APP_CONTACT_CANCEL": "Anuluj",
+      "APP_CONTACT_DELETE": "Usuń",
+      "APP_CONTACT_LABEL_NAME": "Imię - Nazwisko",
+      "APP_CONTACT_LABEL_NUMBER": "Numer",
+      "APP_MESSAGE_TITLE": "Wiadomości",
+      "APP_MESSAGE_NEW_MESSAGE": "Nowa wiadomość",
+      "APP_MESSAGE_ERASE_CONVERSATION": "Usuń wiadomość",
+      "APP_MESSAGE_ERASE_ALL_CONVERSATIONS": "Usuń wszystkie połączenia",
+      "APP_MESSAGE_SEND_GPS": "Wyślij lokacje GPS",
+      "APP_MESSAGE_SET_GPS": "Ustaw lokacje GPS",
+      "APP_MESSAGE_ZOOM_IMG": "Powiększ",
+      "APP_MESSAGE_DELETE": "Usuń",
+      "APP_MESSAGE_SMS": "Wiadomość tekstowa",
+      "APP_MESSAGE_CONTACT_TITLE": "Kontakty",
+      "APP_MESSAGE_CONTRACT_ENTER_NUMBER": "Wprowadź numer",
+      "APP_MESSAGE_PLACEHOLDER_ENTER_MESSAGE": "Wyślij wiadomość",
+      "APP_DARKTCHAT_TITLE": "DarkChat",
+      "APP_DARKTCHAT_NEW_CHANNEL": "Dodaj kanał",
+      "APP_DARKTCHAT_DELETE_CHANNEL": "Usuń kanał",
+      "APP_DARKTCHAT_CANCEL": "Anuluj",
+      "APP_DARKTCHAT_PLACEHOLDER_ENTER_MESSAGE": "Wprowadź wiadomość",
+      "APP_TWITTER_NAME": "Twitter",
+      "APP_TWITTER_VIEW_TWITTER": "Twitter",
+      "APP_TWITTER_VIEW_TOP_TWEETS": "Trends Twittera",
+      "APP_TWITTER_VIEW_TWEETER": "Tweety",
+      "APP_TWITTER_VIEW_SETTING": "Ustawienia",
+      "APP_TWITTER_NEW_ACCOUNT_USERNAME": "Nazwa użytkownika (>= 4)",
+      "APP_TWITTER_NEW_ACCOUNT_PASSWORD": "Hasło (>= 6)",
+      "APP_TWITTER_NEW_ACCOUNT_PASSWORD_CONFIRM": "Potwierdź hasło",
+      "APP_TWITTER_NEW_ACCOUNT_AVATAR": "URL twojego awatara",
+      "APP_TWITTER_PLACEHOLDER_MESSAGE": "Co się z tobą dzieje?",
+      "APP_TWITTER_BUTTON_ACTION_TWEETER": "Wyślij",
+      "APP_TWITTER_BUTTON_PHOTO_TWEETER": "Wyślij zdjęcie",
+      "APP_TWITTER_ACCOUNT_LOGIN": "Zaloguj się",
+      "APP_TWITTER_ACCOUNT_LOGOUT": "Wyloguj się",
+      "APP_TWITTER_ACCOUNT_PARAM": "Moje konto",
+      "APP_TWITTER_ACCOUNT_AVATAR": "Zmiana Avatara",
+      "APP_TWITTER_ACCOUNT_CHANGE_PASSWORD": "Zmiana hasła",
+      "APP_TWITTER_ACCOUNT_NEW": "Nowe konto",
+      "APP_TWIITER_ACCOUNT_SAVE": "Zapisz",
+      "APP_TWIITER_ACCOUNT_CREATE": "Utwórz konto",
+      "APP_TWIITER_ACCOUNT_CANCEL": "Anuluj",
+      "APP_TWITTER_ACCOUNT_USERNAME": "Login",
+      "APP_TWITTER_ACCOUNT_PASSWORD": "Hasło",
+      "APP_TWITTER_NOTIFICATION": "Powiadomienia",
+      "APP_TWITTER_NOTIFICATION_WHEN": "Kiedy powiadomić",
+      "APP_TWITTER_NOTIFICATION_ALL": "Wszystkie wiadomości",
+      "APP_TWITTER_NOTIFICATION_MENTION": "Oznaczenie",
+      "APP_TWITTER_NOTIFICATION_NEVER": "Żadne",
+      "APP_TWITTER_NOTIFICATION_SOUND": "Powiadomienie dzwiękowe",
+      "APP_TWITTER_NOTIFICATION_SOUND_YES": "Tak",
+      "APP_TWITTER_NOTIFICATION_SOUND_NO": "Nie",
+      "APP_TWITTER_NOTIF_ACCOUNT_CREATE_SUCCESS": "Twoje konto na Twitterze zostało utworzone",
+      "APP_TWITTER_NOTIF_ACCOUNT_CREATE_ERROR": "Twoje konto na Twitterze nie mogło zostać utworzone (nazwa użytkownika zajęta?)",
+      "APP_TWITTER_NOTIF_LOGIN_SUCCESS": "Jesteś połączony z Twitterem",
+      "APP_TWITTER_NOTIF_LOGIN_ERROR": "Nieprawidłowe konto / hasła",
+      "APP_TWITTER_NOTIF_AVATAR_SUCCESS": "Twój awatar został zmieniony!",
+      "APP_TWITTER_NOTIF_NEW_PASSWORD_SUCCESS": "Twoje hasło zostało zmienione",
+      "APP_TWITTER_NOTIF_NEW_PASSWORD_ERROR": "Ups... Twoje hasło nie mogło zostać zmienione",
+      "APP_TWITTER_NOTIF_NEW_PASSWORD_MISS_MATCH": "Hasła nie pasują do siebie",
+      "APP_TWITTER_NOTIF_NEW_PASSWORD_LENGTH_ERROR": "Hasło jest za krótkie",
+      "APP_NOTES": "Notatki",
+      "APP_BANK_TITLE_BALANCE": "Saldo konta",
+      "APP_BANK_TITLE_ENTER_MONEY": "Numer konta",
+      "APP_BANK_BUTTON_TRANSFER": "Wyślij przelew",
+      "APP_BANK_BUTTON_CANCEL": "Anuluj",
+      "APP_DARKTCHAT_NEW_NOTE": "Dodaj notatkę",
+      "APP_DARKTCHAT_DELETE_NOTE": "Usuń notatkę",
+      "APP_TWITTER_VIEW_REPLY": "Odpowiedz",
+      "APP_TWITTER_ACCOUNT_AVATAR_TAKE": "Zrób zdjecie",
+      "APP_TWITTER_BUTTON_ACTION_TWEETER_SENT": "Tweet wysłany!",
+      "APP_PHONE_NUMBER_HIDDEN": "Ukryty numer",
+      "APP_PHONE_NUMBER_UNKNOWN": "Nieznany",
+      "APP_MESSAGE_SEND_GPS_REALTIME": "Udostępnij loklizacje GPS",
+      "APP_MESSAGE_SEND_GPS_REALTIME_TIME_1": "1 Minuta",
+      "APP_MESSAGE_SEND_GPS_REALTIME_TIME_2": "5 Minuty",
+      "APP_MESSAGE_SEND_GPS_REALTIME_TIME_3": "10 Minut",
+      "APP_MESSAGE_SEND_PHOTO": "Zrób zdjęcie",
+      "APP_MESSAGE_SEND_PHOTO_GALLERY": "Wyślij zdjęcie z galerii",
+      "APP_PHONE_CANCEL": "Anuluj",
+      "APP_PHONE_ADD": "Dodaj kontakt",
+      "timeago": [
+        "tylko teraz",
+        [
+          "mniej niż minuta"
+        ],
+        [
+          "około minuty",
+          "%s minut"
+        ],
+        [
+          "około godziny",
+          "około %s godzin"
+        ],
+        [
+          "około tygodnia",
+          "%s tydzień"
+        ],
+        [
+          "%s week ago",
+          "%s weeks ago"
+        ],
+        [
+          "około miesiąca",
+          "%s miesięcy"
+        ],
+        [
+          "około roku",
+          "%s lat"
+        ]
+      ]
+    }
+  }
+}

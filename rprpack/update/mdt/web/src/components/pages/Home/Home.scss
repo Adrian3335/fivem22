@@ -1,0 +1,256 @@
+.home-container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.home {
+    width: 765px;
+    margin: 0 36px;
+    height: 100%;
+
+    .self-container {
+        width: 765px;
+        height: 113px;
+        border-radius: 10px;
+        background-color: #111925;
+        color: #fff;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 14px;
+        box-sizing: border-box;
+
+        .self-name {
+            width: 50%;
+            height: 50%;
+            font-size: 18px;
+            display: flex;
+            justify-content: flex-start;
+            padding-left: 16px;
+            align-items: center;
+
+            span span {
+                opacity: 0.5;
+                font-size: 13px;
+            }
+        }
+
+        .self-hours {
+            width: 50%;
+            height: 50%;
+            font-size: 18px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding-right: 20px;
+            
+        }
+
+        .self-actions {
+            width: 100%;
+            height: 50%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            .action-button {
+                width: 107px;
+                height: 28px;
+                border-radius: 5px;
+                color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #0D141F;
+                font-size: 12px;
+                &:hover {
+                    cursor: pointer;
+                    opacity: 0.7;
+                }
+            }
+
+            .clicked {
+                color: #0F1724 !important;
+                background-color: #316BFF !important;
+            }
+
+        }
+
+    }
+
+    .notes-container {
+        width: 765px;
+        height: 286px;
+        border-radius: 10px;
+        background-color: #111925;
+        color: #fff;
+        padding-top: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+        *::-webkit-scrollbar {
+            width: 2px;
+            
+        }
+        
+        *::-webkit-scrollbar-track {
+            margin-right: 10px;
+            background: #0D141F;
+            border: 2px solid #0D141F;
+        }
+        
+        *::-webkit-scrollbar-thumb {
+            background-color: #316BFF;
+            border: 2px solid #316BFF;
+        }
+
+        .notes-header {
+            font-size: 12px;
+            gap: 4px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 27px;
+            span {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                opacity: 0.5;
+            }
+        }
+
+        .notes-notes {
+            width: 96%;
+            height: 232px;
+            display: flex;
+            justify-content: center;
+            overflow-y: scroll;
+
+            table {
+                border-spacing: 4px;
+                display: block;
+            }
+
+            .notes-row {
+                min-height: 28px;
+                height: 28px;
+                font-size: 10px;
+                margin-bottom: 6px;
+                td {
+                    background-color: #0D141F;
+                    span {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .vehicle-container {
+        height: 184px !important;
+
+        .vehicle-notes {
+            height: 130px !important;
+        }
+    }
+
+}
+
+.notepad {
+    width: 211px;
+    height: 100%;
+
+    *::-webkit-scrollbar {
+        width: 2px;
+        
+    }
+    
+    *::-webkit-scrollbar-track {
+        background: #0D141F;
+        border: 2px solid #0D141F;
+    }
+    
+    *::-webkit-scrollbar-thumb {
+        background-color: #316BFF;
+        border: 2px solid #316BFF;
+    }
+
+    .notepad-container {
+        width: 211px;
+        height: 681px;
+        border-radius: 10px;
+        background-color: #111925;
+        padding-top: 18px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 9px;
+        input {
+            width: 176px;
+            height: 26px;
+            background-color: #0D141F;
+            display: flex;
+            align-items: center;
+            padding: 5px;
+            color: rgba(255, 255, 255, 0.7);
+            border: none;
+            outline: none;
+            border-radius: 5px;
+            font-size: 10px;
+            &:focus {
+                border: none;
+                outline: none;
+            }
+        }
+        textarea {
+            width: 176px;
+            height: 580px;
+            background-color: #0D141F;
+            padding: 5px;
+            color: rgba(255, 255, 255, 0.7);
+            border: none;
+            outline: none;
+            border-radius: 5px;
+            font-size: 10px;
+            resize: none;
+            &:focus {
+                border: none;
+                outline: none;
+            }
+        }
+        .buttons {
+            width: 176px;
+            height: 20px;
+            display: flex;
+            justify-content: space-between;
+            .btn {
+                width: 85px;
+                height: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                font-size: 9px;
+                border-radius: 5px;
+                background-color: #0D141F;
+                opacity: 0.6;
+                &:hover {
+                    opacity: 1.0;
+                    cursor: pointer;
+                }
+            }
+            .btn-blue {
+                background-color: #316BFF !important;
+                color: #0D141F !important;
+            }
+        }
+    }
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" /> -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>NUI React Boilerplate</title>
+    <script type="module" crossorigin src="./assets/index-11e1e75c.js"></script>
+    <link rel="stylesheet" href="./assets/index-0310524d.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    
+    <script>
+      const Root = document.querySelector(":root");
+      window.onload = function(e) {
+        window.addEventListener('message', function(event) {
+            switch(event.data.action) {
+                case 'updateColor':
+                    mainColor = event.data.data.mainColor
+                    Root.style.setProperty("--mainColor", event.data.data.mainColor);
+                    Root.style.setProperty("--backgroundColor", event.data.data.secondaryColor + 'cc');
+                    Root.style.setProperty("--secondaryColor", event.data.data.secondaryColor + 'f5');
+                    Root.style.setProperty("--textColor", event.data.data.textColor);
+        
+                    Root.style.setProperty("--borderColor", event.data.data.secondaryColor + '80');
+                    break;
+                default:
+                    break;
+              }
+            })
+          }
+    </script>
+
+  </body>
+</html>

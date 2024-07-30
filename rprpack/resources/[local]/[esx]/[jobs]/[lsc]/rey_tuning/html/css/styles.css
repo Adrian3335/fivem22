@@ -1,0 +1,165 @@
+body {
+	padding: 20px 0;
+	font-size: 20px;
+	color: white;
+	font-family: Arial, sans-serif;
+	z-index: 999;
+	margin-left: 40px;
+	overflow-x: hidden;
+	font-family: 'Roboto', sans-serif;
+}
+  
+main {
+	position: absolute;
+	width: 500px;
+	/* height: 550px; */
+	background: rgba(0, 0, 0, 0.7);
+	display: none;
+	z-index: 10000;
+}
+  
+.cart {
+	float: right;
+	width: 350px;
+	/* height: 550px; */
+	background: rgba(0, 0, 0, 0.7);
+	font-size: 16px;
+	margin-top: 80px;
+	padding-top: 10px;
+	display: none;
+}
+
+.cartitem {
+	float:left; 
+	width: 100%;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+}
+
+.catname {
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+.label {
+	float: left;
+}
+
+.price {
+	float: right;
+	padding-right: 20px;
+}
+
+.labour-sum-box {
+	float: left;
+	width: 100%;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+.price-sum-box {
+	float: left;
+	width: 100%;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+.title {
+	height: 100px;
+	width: 100%;
+	background-size: 75%;
+	background-position-y: center;
+	background-position-x: center;
+	background-repeat: no-repeat;
+	background-color: linear-gradient(to right, #fff, #000);
+	font-size: 42px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 100px;
+}
+
+.font-red {
+	color: red;
+}
+
+.categories {
+	overflow-y: scroll;
+	height: 370px;
+	padding-left: 10px;
+	padding-top: 5px;
+}
+
+.listElement {
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.inline {
+	display: inline-block;
+}
+
+.nav-arrow {
+	padding-right: 10px;
+	float: right;
+}
+
+.price-box {
+	text-align: right;
+	float: left;
+	width: 100px;
+	font-weight: bold;
+	padding-right: 10px;
+}
+
+.right-box {
+	float: right;
+}
+
+.selected {
+	background: rgba(255, 255, 255, 0.3);
+}
+
+.separator {
+	display: flex;
+	width: 100%;
+	height: 8px;
+	background: rgba(255, 255, 200, 0.3);
+}
+
+.legend {
+	padding: 10px;
+	font-size: 15px;
+}
+
+.legend p {
+	padding: 0;
+	margin: 0;
+}
+
+::-webkit-scrollbar {
+	width: 8px;
+	height: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: gray;
+	border-radius: 1px;
+	}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #3c3c3c;
+}
+
+::-webkit-scrollbar-track {
+	background: transparent;
+	border-radius: 10px;
+}
+
+.dolarsign {
+	color: lightgreen;
+}

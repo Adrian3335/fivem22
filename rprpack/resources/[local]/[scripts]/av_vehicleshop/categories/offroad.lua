@@ -1,0 +1,45 @@
+--[[
+    decrypted for reason: scamming
+    opiumdev owns all
+]]
+
+--https://docs.altv.mp/gta/articles/vehicle/models.html#off_road
+Config.Categories['offroad'] = {
+    {name = "bfinjection", price = 15000, stock = 10},
+    {name = "bifta", price = 15000, stock = 10},
+    {name = "blazer", price = 15000, stock = 10},
+    {name = "blazer2", price = 15000, stock = 10},
+    {name = "blazer3", price = 15000, stock = 10},
+    {name = "blazer4", price = 15000, stock = 10},
+    {name = "bodhi2", price = 15000, stock = 10},
+    {name = "brawler", price = 15000, stock = 10},
+    {name = "caracara2", price = 15000, stock = 10},
+    {name = "dloader", price = 15000, stock = 10},
+    {name = "draugur", price = 15000, stock = 10},
+    {name = "dubsta3", price = 15000, stock = 10},
+    {name = "dune", price = 15000, stock = 10},
+    {name = "dune2", price = 15000, stock = 10},
+    {name = "everon", price = 15000, stock = 10},
+    {name = "freecrawler", price = 15000, stock = 10},
+    {name = "hellion", price = 15000, stock = 10},
+    {name = "kalahari", price = 15000, stock = 10},
+    {name = "kamacho", price = 15000, stock = 10},
+    {name = "marshall", price = 15000, stock = 10},
+    {name = "mesa3", price = 15000, stock = 10},
+    {name = "monster", price = 15000, stock = 10},
+    {name = "outlaw", price = 15000, stock = 10},
+    {name = "patriot3", price = 15000, stock = 10},
+    {name = "rancherxl", price = 15000, stock = 10},
+    {name = "rancherxl2", price = 15000, stock = 10},
+    {name = "rebel", price = 15000, stock = 10},
+    {name = "rebel2", price = 15000, stock = 10},
+    {name = "riata", price = 15000, stock = 10},
+    {name = "sandking", price = 15000, stock = 10},
+    {name = "sandking2", price = 15000, stock = 10},
+    {name = "trophytruck", price = 15000, stock = 10},
+    {name = "trophytruck2", price = 15000, stock = 10},
+    {name = "vagrant", price = 15000, stock = 10},
+    {name = "verus", price = 15000, stock = 10},
+    {name = "winky", price = 15000, stock = 10},
+    {name = "yosemite3", price = 15000, stock = 10},
+}

@@ -1,0 +1,941 @@
+[class~=skinmenu-menucloth]>[class~=items]>i {
+    font-size: 1.5625pc;
+}
+
+html {
+    margin-left: 0;
+}
+
+[class~=skinmenu-controls]>[class~=skinmenu-controls-items]>[class~=skinmenu-controls-item]>[class~=text] {
+    text-transform: none;
+}
+
+[class~=skinmenu-items] {
+    direction: rtl;
+}
+
+[class~=skinmenu-items] {
+    overflow-y: auto;
+}
+
+html {
+    margin-bottom: 0;
+}
+
+[class~=skinmenu-items],
+.text h1 {
+    position: relative;
+}
+
+html {
+    margin-right: 0;
+}
+
+html {
+    margin-top: 0;
+}
+
+[class~=skinmenu-controls]>[class~=skinmenu-controls-items]>[class~=skinmenu-controls-item]>[class~=text] {
+    color: #707070;
+}
+
+#lewa,
+[class~=skinmenu-menucloth]>[class~=items]>i,
+[class~=skinmenu-items]>[class~=item]>[class~=number]>i {
+    color: #fff;
+}
+
+[class~=skinmenu-items] {
+    width: 42vh;
+}
+
+[class~=skinmenu-items] {
+    height: 65vh;
+}
+
+[class~=skinmenu-items]>[class~=item]:first-child {
+    margin-top: 0;
+}
+
+[class~=skinmenu-items]>[class~=item]>[class~=number]>i {
+    width: 2vh;
+}
+
+[class~=skinmenu-items]>[class~=item]:last-child {
+    margin-bottom: 0;
+}
+
+[class~=skinmenu-items] {
+    top: 7vh;
+}
+
+[class~=skinmenu-controls]>[class~=skinmenu-controls-items]>[class~=skinmenu-controls-item]>[class~=text],
+#lewa,
+[class~=skinmenu-menucloth],
+.skinmenu-controls {
+    position: absolute;
+}
+
+[class~=skinmenu-items]>[class~=item]>[class~=number]>i,
+[class~=skinmenu-menucloth]>[class~=items]>i {
+    text-align: center;
+}
+
+[class~=skinmenu-items]>[class~=item]>[class~=range] {
+    appearance: none;
+}
+
+#lewa,
+.skinmenu-controls {
+    left: 2vh;
+}
+
+[class~=skinmenu-items]>[class~=item]>[class~=range] {
+    background-color: rgb(0,0,0,0.6);
+}
+
+[class~=skinmenu-items]>[class~=item]>[class~=range] {
+    border-left-width: medium;
+}
+
+[class~=skinmenu-items] {
+    margin-left: auto;
+}
+
+[class~=skinmenu-items] {
+    margin-right: auto;
+}
+
+[class~=skinmenu-items]>[class~=item] {
+    direction: ltr;
+}
+
+.skinmenu-items::-webkit-scrollbar {
+    overflow: hidden;
+}
+
+#lewa {
+    bottom: 2.5vh;
+}
+
+[class~=skinmenu-items]>[class~=item]>[class~=number]>i {
+    height: 1vh;
+}
+
+[class~=skinmenu-menucloth]>[class~=items]>i {
+    line-height: 4.0625pc;
+}
+
+.skinmenu-items::-webkit-scrollbar {
+    background-color: none;
+}
+
+[class~=skinmenu-items]>[class~=item]>[class~=number]>i {
+    line-height: 1.2vh;
+}
+
+[class~=skinmenu-menucloth]>[class~=items]>i {
+    height: 4.0625pc;
+}
+
+[class~=skinmenu-items]>[class~=item] {
+    background-color: rgb(0,0,0,0.6);
+}
+
+[class~=skinmenu-items]>[class~=item] {
+    margin-bottom: 1.5vh;
+}
+
+[class~=skinmenu-controls]>[class~=skinmenu-controls-items]>[class~=skinmenu-controls-item]>[class~=text] {
+    top: .5vh;
+}
+
+.skinmenu-controls {
+    width: 30vh;
+}
+
+[class~=skinmenu-items]>[class~=item]>[class~=range],
+[class~=skinmenu-items]>[class~=item]>[class~=number]>input {
+    border-bottom-width: medium;
+}
+
+.skinmenu-controls {
+    height: 25vh;
+}
+
+.skinmenu-controls {
+    bottom: 2vh;
+}
+
+[class~=skinmenu-controls]>[class~=skinmenu-controls-items]>[class~=skinmenu-controls-item]>[class~=text] {
+    left: 50%;
+}
+
+#lewa {
+    background: #a575fd;
+}
+
+#lewa,
+.skinmenu-controls {
+    border-radius: .5vh;
+}
+
+.skinmenu-controls,
+html {
+    overflow: hidden;
+}
+
+[class~=skinmenu-items]>[class~=item]>[class~=range],
+[class~=skinmenu-items]>[class~=item]>[class~=number]>input {
+    border-right-width: medium;
+}
+
+[class~=kontener-skin],
+#lewa {
+    padding-left: 1vh;
+}
+
+html {
+    padding-left: 0;
+}
+
+[class~=skinmenu-menucloth] {
+    background-color: rgb(0,0,0,0.6);
+}
+
+html {
+    padding-bottom: 0;
+}
+
+[class~=skinmenu-menucloth]>[class~=items]>i {
+    width: 100%;
+}
+
+[class~=kontener-skin],
+#lewa {
+    padding-bottom: 1vh;
+}
+
+[class~=kontener-skin],
+#lewa {
+    padding-right: 1vh;
+}
+
+[class~=skinmenu-items]>[class~=item]>[class~=range],
+[class~=skinmenu-items]>[class~=item]>[class~=number]>input {
+    border-top-width: medium;
+}
+
+[class~=skinmenu-menucloth] {
+    bottom: 10.3125pc;
+}
+
+[class~=skinmenu-menucloth] {
+    right: .520833333in;
+}
+
+[class~=skinmenu-menucloth] {
+    width: 25pc;
+}
+
+[class~=skinmenu-items]>[class~=item]>[class~=range],
+[class~=skinmenu-items]>[class~=item]>[class~=number]>input {
+    border-left-style: none;
+}
+
+[class~=skinmenu-menucloth] {
+    height: 4.0625pc;
+}
+
+[class~=skinmenu-menucloth] {
+    border-radius: 10px;
+}
+
+html {
+    padding-right: 0;
+}
+
+[class~=kontener-skin],
+[class~=skinmenu-items]>[class~=item]>[class~=range] {
+    position: absolute;
+}
+
+[class~=kontener-skin] {
+    right: 0;
+}
+
+[class~=skinmenu-items]>[class~=item]>[class~=number]>input,
+[class~=skinmenu-items]>[class~=item]>[class~=range] {
+    border-bottom-style: none;
+}
+
+html {
+    padding-top: 0;
+}
+
+[class~=kontener-skin] {
+    width: 45vh;
+}
+
+[class~=skinmenu-items]>[class~=item]>[class~=range],
+[class~=skinmenu-items]>[class~=item]>[class~=number]>input {
+    border-right-style: none;
+}
+
+#lewa,
+[class~=skinmenu-controls]>[class~=skinmenu-controls-items]>[class~=skinmenu-controls-item]>[class~=text] {
+    font-size: 2vh;
+}
+
+[class~=skinmenu-items]>[class~=item]>[class~=range],
+[class~=skinmenu-items]>[class~=item]>[class~=number]>input {
+    border-top-style: none;
+}
+
+html {
+    user-select: none;
+}
+
+html {
+    font-family: "Poppins", sans-serif;
+}
+
+[class~=skinmenu-items]>[class~=item]>[class~=number]>input {
+    background-color: transparent;
+}
+
+[class~=kontener-skin] {
+    height: 100vh;
+}
+
+[class~=skinmenu-items]>[class~=item]>[class~=number]>input,
+[class~=skinmenu-items]>[class~=item]>[class~=range] {
+    border-left-color: currentColor;
+}
+
+[class~=skinmenu-items]>[class~=item]>[class~=number]>input {
+    border-left-width: medium;
+}
+
+[class~=skinmenu-items]>[class~=item]>[class~=range] {
+    border-bottom-color: currentColor;
+}
+
+[class~=skinmenu-menuac]>[class~=buttons-h]>button,
+#lewa,
+[class~=kontener-skin] {
+    padding-top: 1vh;
+}
+
+body {
+    margin-left: 0;
+}
+
+body {
+    margin-bottom: 0;
+}
+
+[class~=skinmenu-items]>[class~=item]>[class~=range] {
+    border-right-color: currentColor;
+}
+
+[class~=skinmenu-items]>[class~=item]>[class~=number]>i:hover,
+[class~=bujtonek] {
+    cursor: pointer;
+}
+
+[class~=skinmenu-items]>[class~=item]>[class~=range] {
+    border-top-color: currentColor;
+}
+
+[class~=skinmenu-menuac]>[class~=buttons-h]>button {
+    background-color: rgb(0,0,0,0.6);
+}
+
+[class~=skinmenu-items]>[class~=item]>[class~=range] {
+    border-image: none;
+}
+
+[class~=kontener-skin] {
+    background-color: rgb(0,0,0,0.6);
+}
+
+[class~=clothes-menu],
+[class~=skinmenu-items]>[class~=item]>[class~=range] {
+    left: 7vh;
+}
+
+[class~=bujtonek],
+[class~=clothes-menu],
+[class~=skinmenu-items]>[class~=item] {
+    position: relative;
+}
+
+[class~=skinmenu-menuac]>[class~=buttons-h]>button,
+[class~=bujtonek] {
+    padding-left: 2vh;
+}
+
+[class~=skinmenu-menuac]>[class~=buttons-h]>button {
+    padding-bottom: 1vh;
+}
+
+[class~=skinmenu-items]>[class~=item]>[class~=range] {
+    bottom: 2vh;
+}
+
+[class~=clothes-menu] {
+    top: 5vh;
+}
+
+[class~=skinmenu-menuac]>[class~=buttons-h]>button,
+[class~=bujtonek] {
+    padding-right: 2vh;
+}
+
+body {
+    margin-right: 0;
+}
+
+[class~=skinmenu-items]>[class~=item] {
+    min-height: 12vh;
+}
+
+[class~=skinmenu-items]>[class~=item],
+[class~=skinmenu-menuac]>[class~=buttons-h]>button {
+    border-radius: 1vh;
+}
+
+[class~=bujtonek],
+[class~=bujton] {
+    float: left;
+}
+
+[class~=bujtonek] {
+    margin-left: 3vh;
+}
+
+#prawa,
+[class~=skinmenu-menuac]>[class~=buttons-h]>button,
+[class~=bujton],
+[class~=bujtonek] {
+    color: #fff;
+}
+
+[class~=skinmenu-controls]>[class~=skinmenu-controls-items]>[class~=skinmenu-controls-item]>[class~=text] {
+    transform: translateX(-50%);
+}
+
+[class~=bujtonek] {
+    font-size: 1.7vh;
+}
+
+[class~=skinmenu-items]>[class~=item]>[class~=range] {
+    width: 25vh;
+}
+
+[class~=skinmenu-items]>[class~=item]>[class~=range] {
+    height: 3vh;
+}
+
+[class~=bujtonek],
+[class~=skinmenu-items]>[class~=item]>[class~=range] {
+    border-radius: .5vh;
+}
+
+[class~=skinmenu-controls]>[class~=skinmenu-controls-items]>[class~=skinmenu-controls-item]>[class~=range] {
+    appearance: none;
+}
+
+.text h1 {
+    top: 4vh;
+}
+
+body {
+    margin-top: 0;
+}
+
+[class~=skinmenu-items]>[class~=item]>[class~=number]>input {
+    border-bottom-color: currentColor;
+}
+
+#prawa,
+[class~=save-postac],
+[class~=skinmenu-controls]>[class~=skinmenu-controls-items]>[class~=skinmenu-controls-item]>[class~=range] {
+    position: absolute;
+}
+
+[class~=bujtonek] {
+    padding-bottom: .2vh;
+}
+
+[class~=bujtonek] {
+    padding-top: .2vh;
+}
+
+[class~=bujtonek] {
+    background-color: rgb(0,0,0,0.6);
+}
+
+body {
+    padding-left: 0;
+}
+
+body {
+    padding-bottom: 0;
+}
+
+body {
+    padding-right: 0;
+}
+
+.skinmenu-items>.item>.range::-webkit-slider-thumb {
+    appearance: none;
+}
+
+body {
+    padding-top: 0;
+}
+
+.skinmenu-items>.item>.range::-webkit-slider-thumb {
+    background-color: #a575fd;
+}
+
+[class~=skinmenu-items]>[class~=item]>[class~=number]>input {
+    border-right-color: currentColor;
+}
+
+[class~=skinmenu-menuac]>[class~=buttons-h]>button {
+    border-left-width: medium;
+}
+
+[class~=skinmenu-menuac]>[class~=buttons-h]>button {
+    border-bottom-width: medium;
+}
+
+[class~=bujtonek] {
+    transition: transform .4s;
+}
+
+[class~=skinmenu-controls]>[class~=skinmenu-controls-items]>[class~=skinmenu-controls-item]>[class~=range] {
+    background-color: rgb(0,0,0,0.6);
+}
+
+[class~=save-postac] {
+    bottom: 5vh;
+}
+
+[class~=skinmenu-items]>[class~=item]>[class~=number]>input {
+    border-top-color: currentColor;
+}
+
+#prawa {
+    right: 2vh;
+}
+
+#prawa {
+    bottom: 2.5vh;
+}
+
+[class~=save-postac] {
+    left: 15vh;
+}
+
+[class~=skinmenu-menuac]>[class~=buttons-h]>button {
+    border-right-width: medium;
+}
+
+.skinmenu-controls>.skinmenu-controls-items>.skinmenu-controls-item,
+[class~=bujton] {
+    position: relative;
+}
+
+[class~=skinmenu-menuac]>[class~=buttons-h]>button {
+    border-top-width: medium;
+}
+
+[class~=skinmenu-items]>[class~=item]>[class~=number]>input {
+    border-image: none;
+}
+
+[class~=skinmenu-menuac]>[class~=buttons-h]>button {
+    border-left-style: none;
+}
+
+#prawa {
+    background: #a575fd;
+}
+
+[class~=skinmenu-menuac]>[class~=buttons-h]>button {
+    border-bottom-style: none;
+}
+
+[class~=skinmenu-controls]>[class~=skinmenu-controls-items]>[class~=skinmenu-controls-item]>[class~=range] {
+    left: 2vh;
+}
+
+#prawa {
+    padding-left: 1vh;
+}
+
+[class~=bujton] {
+    margin-left: 2vh;
+}
+
+.skinmenu-items>.item>.range::-webkit-slider-thumb {
+    width: 3vh;
+}
+
+[class~=skinmenu-items]>[class~=item]>[class~=number]>input {
+    outline: none;
+}
+
+[class~=skinmenu-items]>[class~=item]>[class~=number]>i:hover {
+    color: #a575fd;
+}
+
+body {
+    user-select: none;
+}
+
+[class~=bujton] {
+    font-size: 1.8vh;
+}
+
+[class~=skinmenu-controls]>[class~=skinmenu-controls-items]>[class~=skinmenu-controls-item]>[class~=range] {
+    bottom: 1vh;
+}
+
+[class~=skinmenu-items]>[class~=item],
+body {
+    overflow: hidden;
+}
+
+[class~=skinmenu-menuac]>[class~=buttons-h]>button {
+    border-right-style: none;
+}
+
+[class~=skinmenu-items]>[class~=item]>[class~=number]>input {
+    font-size: 1.6vh;
+}
+
+[class~=bujton] {
+    padding-left: 3vh;
+}
+
+.skinmenu-menucloth>.items {
+    display: flex;
+}
+
+[class~=skinmenu-items]>[class~=item]>[class~=number]>input {
+    color: #707070;
+}
+
+.skinmenu-menucloth>.items {
+    width: 100%;
+}
+
+.skinmenu-items>.item>.range::-webkit-slider-thumb {
+    height: 2vh;
+}
+
+body,
+[class~=skinmenu-items]>[class~=item]>[class~=number]>input {
+    font-family: "Poppins", sans-serif;
+}
+
+#prawa {
+    padding-bottom: 1vh;
+}
+
+[class~=bujton] {
+    padding-bottom: .2vh;
+}
+
+[class~=bujton] {
+    padding-right: 3vh;
+}
+
+.skinmenu-menucloth>.items {
+    height: 100%;
+}
+
+[class~=bujton]:hover,
+[class~=bujton2]:hover,
+[class~=bujtonek]:hover {
+    transform: scale(1.1);
+}
+
+.skinmenu-items>.item>.range::-webkit-slider-thumb {
+    border-radius: 60vh;
+}
+
+.skinmenu-controls>.skinmenu-controls-items>.skinmenu-controls-item {
+    background-color: rgb(0,0,0,0.6);
+}
+
+[class~=bujton] {
+    padding-top: .2vh;
+}
+
+[class~=skinmenu-controls]>[class~=skinmenu-controls-items]>[class~=skinmenu-controls-item]>[class~=range] {
+    width: 25vh;
+}
+
+[class~=skinmenu-controls]>[class~=skinmenu-controls-items]>[class~=skinmenu-controls-item]>[class~=range],
+[class~=skinmenu-items]>[class~=item]>[class~=number]>input {
+    height: 2vh;
+}
+
+#prawa,
+[class~=bujton] {
+    border-radius: .5vh;
+}
+
+[class~=skinmenu-controls]>[class~=skinmenu-controls-items]>[class~=skinmenu-controls-item]>[class~=range]::-webkit-slider-thumb {
+    font-size: 0;
+}
+
+[class~=bujton] {
+    background-color: rgb(0,0,0,0.6);
+}
+
+[class~=skinmenu-controls]>[class~=skinmenu-controls-items]>[class~=skinmenu-controls-item]>[class~=range]::-webkit-slider-thumb {
+    appearance: none;
+}
+
+[class~=bujton]:hover,
+[class~=bujton2]:hover,
+[class~=bujtonek]:hover {
+    color: #a575fd;
+}
+
+#prawa {
+    padding-right: 1vh;
+}
+
+[class~=skinmenu-controls]>[class~=skinmenu-controls-items]>[class~=skinmenu-controls-item]>[class~=range]::-webkit-slider-thumb {
+    background-color: #a575fd;
+}
+
+[class~=skinmenu-controls]>[class~=skinmenu-controls-items]>[class~=skinmenu-controls-item]>[class~=range]::-webkit-slider-thumb {
+    width: 2vh;
+}
+
+.skinmenu-controls>.skinmenu-controls-items>.skinmenu-controls-item {
+    top: .3125pc;
+}
+
+body {
+    display: none;
+}
+
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+[class~=skinmenu-items]>[class~=item]>[class~=number]>input {
+    line-height: 1vh;
+}
+
+[class~=skinmenu-menuac]>[class~=buttons-h]>button {
+    border-top-style: none;
+}
+
+[class~=skinmenu-controls]>[class~=skinmenu-controls-items]>[class~=skinmenu-controls-item]>[class~=range]::-webkit-slider-thumb {
+    height: 2vh;
+}
+
+.skinmenu-controls>.skinmenu-controls-items>.skinmenu-controls-item {
+    left: 0;
+}
+
+.skinmenu-controls>.skinmenu-controls-items>.skinmenu-controls-item {
+    height: 7vh;
+}
+
+[class~=skinmenu-controls]>[class~=skinmenu-controls-items]>[class~=skinmenu-controls-item]>[class~=range]::-webkit-slider-thumb {
+    margin-right: .072916667in;
+}
+
+[class~=skinmenu-menuac]>[class~=buttons-h]>button {
+    border-left-color: currentColor;
+}
+
+#prawa {
+    padding-top: 1vh;
+}
+
+[class~=bujton2],
+[class~=skinmenu-menucloth]>[class~=items]>i:hover,
+[class~=bujton],
+[class~=skinmenu-menuac]>[class~=buttons-h]>button {
+    cursor: pointer;
+}
+
+#prawa {
+    font-size: 2vh;
+}
+
+[class~=skinmenu-items]>[class~=item]>[class~=number]>input {
+    position: absolute;
+}
+
+[class~=skinmenu-menuac]>[class~=buttons-h]>button {
+    border-bottom-color: currentColor;
+}
+
+[class~=bujton2],
+[class~=bujton] {
+    transition: transform .4s;
+}
+
+[class~=skinmenu-controls]>[class~=skinmenu-controls-items]>[class~=skinmenu-controls-item]>[class~=range]::-webkit-slider-thumb {
+    border-radius: 50vh;
+}
+
+[class~=skinmenu-menuac]>[class~=buttons-h]>button,
+[class~=bujton2] {
+    position: relative;
+}
+
+[class~=bujton2] {
+    float: left;
+}
+
+.skinmenu-controls>.skinmenu-controls-items>.skinmenu-controls-item {
+    width: 30vh;
+}
+
+.skinmenu-controls>.skinmenu-controls-items>.skinmenu-controls-item {
+    margin-left: 0;
+}
+
+[class~=skinmenu-items]>[class~=item]>[class~=number]>input {
+    bottom: 6vh;
+}
+
+[class~=bujton2] {
+    margin-left: 2vh;
+}
+
+[class~=bujton2],
+.text h1 {
+    color: #fff;
+}
+
+[class~=skinmenu-menuac]>[class~=buttons-h]>button {
+    border-right-color: currentColor;
+}
+
+[class~=skinmenu-items]>[class~=item]>[class~=number]>input {
+    right: 0;
+}
+
+[class~=skinmenu-items]>[class~=item]>[class~=number]>input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+[class~=skinmenu-items]>[class~=item]>[class~=number]>input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+[class~=bujton2],
+.title {
+    font-size: 1.8vh;
+}
+
+[class~=skinmenu-menuac]>[class~=buttons-h]>button {
+    border-top-color: currentColor;
+}
+
+[class~=bujton2] {
+    padding-left: 3vh;
+}
+
+[class~=bujton2] {
+    padding-bottom: .2vh;
+}
+
+[class~=bujton2] {
+    padding-right: 3vh;
+}
+
+[class~=skinmenu-menuac]>[class~=buttons-h]>button {
+    border-image: none;
+}
+
+.skinmenu-controls>.skinmenu-controls-items>.skinmenu-controls-item {
+    margin-bottom: 5px;
+}
+
+.skinmenu-controls>.skinmenu-controls-items>.skinmenu-controls-item {
+    margin-right: 0;
+}
+
+[class~=bujton2] {
+    padding-top: .2vh;
+}
+
+.skinmenu-controls>.skinmenu-controls-items>.skinmenu-controls-item,
+[class~=bujton2] {
+    border-radius: .5vh;
+}
+
+.skinmenu-controls>.skinmenu-controls-items>.skinmenu-controls-item {
+    margin-top: 5px;
+}
+
+.text h1,
+[class~=skinmenu-menuac]>[class~=buttons-h]>button {
+    font-size: 2.5vh;
+}
+
+[class~=bujton2] {
+    background-color: rgb(0,0,0,0.6);
+}
+
+[class~=skinmenu-menucloth]>[class~=items]>i:hover {
+    color: #a575fd;
+}
+
+.title {
+    color: #707070;
+}
+
+.title,
+.text h1 {
+    text-align: center;
+}
+
+[class~=skinmenu-menuac]>[class~=buttons-h]>button {
+    top: 60vh;
+}
+
+.title {
+    margin-left: 1vh;
+}
+
+.title {
+    margin-bottom: 1vh;
+}
+
+.title {
+    margin-right: 1vh;
+}
+
+[class~=skinmenu-menuac]>[class~=buttons-h]>button {
+    left: 16vh;
+}
+
+[class~=skinmenu-menuac]>[class~=buttons-h]>button {
+    margin-left: 1vh;
+}
+
+.title {
+    margin-top: 1vh;
+}
+
+.title {
+    text-transform: uppercase;
+}

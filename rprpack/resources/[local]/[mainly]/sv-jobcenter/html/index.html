@@ -1,0 +1,108 @@
+<html>
+    <head>
+        <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script>
+            var selected = 0;
+            $(document).keyup(function(e) {
+                if(e.keyCode == 27){
+                    close()
+                    $.post('https://sv-jobcenter/close', JSON.stringify({}));
+                }
+            })
+            window.addEventListener('message', function(event) {
+                if(event.data.type == "open"){
+                    $('.container').fadeIn(300)
+                }
+            });
+            function close(){
+                $.post('http://sv-jobcenter/close', JSON.stringify({}));
+                $('.container').fadeOut(300)
+            }
+            function toggle(x){
+                if(x==1){
+                    switch(selected){
+                        case 0:
+                            $('.jobs').animate({left: "-600px"})
+                            selected = 1
+                            break
+                        case 1:
+                            $('.jobs').animate({left: "-1200px"})
+                            selected = 2
+                            break
+                        case 2:
+                            $('.jobs').animate({left: "-1800px"})
+                            selected = 3
+                            break
+                        case 3:
+                            $('.jobs').animate({left: "0px"})
+                            selected = 0
+                            break
+                    }
+                }
+                else if(x==0){
+                    switch(selected){
+                        case 0:
+                             $('.jobs').animate({left: "-1800px"})
+                             selected = 3
+                             break
+                        case 1:
+                            $('.jobs').animate({left: "-0px"})
+                            selected = 0
+                            break
+                        case 2:
+                            $('.jobs').animate({left: "-600px"})
+                            selected = 1
+                            break
+                        case 3:
+                            $('.jobs').animate({left: "-1200px"})
+                            selected = 2
+                            break
+                    }
+                }
+            }
+            function set(praca){
+                $.post('https://sv-jobcenter/setjob', JSON.stringify({praca: praca}));
+                close()
+                $.post('https://sv-jobcenter/close', JSON.stringify({}));
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="arrow" onclick="toggle(0)" id="left"><span class="material-icons arrow-icon">chevron_left</span></div>
+            <div class="job">
+                <div class="jobs">
+                    <div class="job-content">
+                        <p class="job-title">BEZROBOTNY</p>
+                        <p class="job-desc">Zwolnij się z dowolnej pracy.</p>
+                        <p class="job-button"><button onclick="set('unemployed')">WYBIERZ</button></p>
+                    </div>
+                    <div class="job-content">
+                        <p class="job-title">ROLNIK</p>
+                        <p class="job-desc">Jeśli lubisz wiejskie klimaty, a praca na roli nie jest ci obca, świetnie odnajdziesz się w tej robocie. Oferujemy stabilne zatrudnienie, dobrą atmosferę i pracę w cichym Blaine County.</p>
+                        <p class="job-button"><button onclick="set('rolnik')">WYBIERZ</button></p>
+                    </div>
+                    <!-- <div class="job-content">
+                        <p class="job-title">RZEŹNIK</p>
+                        <p class="job-desc">Już od dziś możesz mieć wkład w to, co jesz! Nie przeraża cię odrobina krwi, jesteś pracowity, uczciwy i chcesz dobrze zarobić? Wyślij CV- odezwiemy się!</p>
+                        <p class="job-button"><button onclick="set('slaughter')">WYBIERZ</button></p>
+                    </div>
+                    <div class="job-content">
+                        <p class="job-title">ZŁOMIARZ</p>
+                        <p class="job-desc">Każdy ziom zbiera złom... - zbieraj i ty! Wyślij CV, zatrudnij się już dziś i zacznij robić to, co faktycznie lubisz! Oferujemy godziwą płacę i wspaniałą atmosferę.</p>
+                        <p class="job-button"><button onclick="set('scrap')">WYBIERZ</button></p>
+                    </div>
+                    <div class="job-content">
+                        <p class="job-title">RYBAK</p>
+                        <p class="job-desc">Uwielbiasz szum wody i wędkowanie? Wyślij CV, zatrudnij się już dziś i zacznij robić to, co faktycznie lubisz! Oferujemy godziwą płacę i wspaniałą atmosferę.</p>
+                        <p class="job-button"><button onclick="set('fisher')">WYBIERZ</button></p>
+                    </div> -->
+                </div>
+            </div>
+            <div class="arrow" onclick="toggle(1)" id="right"><span class="material-icons arrow-icon">chevron_right</span></div>
+        </div>
+    </body>
+</html>

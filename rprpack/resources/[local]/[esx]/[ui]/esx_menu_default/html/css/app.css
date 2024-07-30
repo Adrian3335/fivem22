@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+	--primaryColor: #a575fd;
+  }
+
+::-webkit-scrollbar {
+    display: none;
+}
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.menu {
+	min-width: 280px;
+	position: absolute;
+	background-color: rgba(39, 39, 39, 0.6);
+	padding: 15px;
+	box-sizing: border-box;
+	border-radius: 10px;
+	right: 1%;
+	top: 40%;
+}
+
+.menu .head {
+	color: #a575fd;
+	font-size: 20px;
+  	text-align: center;
+	margin-bottom: 15px;
+}
+
+.menu .menu-items {
+	max-height: 600px;
+	overflow-y: auto;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.menu .menu-items .menu-item {
+	width: 100%;
+	display: block;
+	font-size: 16px;
+	color: #ffffff;
+	box-sizing: border-box;
+	padding: 0 10px;
+	height: 30px;
+	line-height: 30px;
+	border-radius: 5px;
+}
+
+.menu .menu-items .menu-item > img {
+	opacity         : 1.0;
+	position        : absolute;
+	width           : 25px;
+	height          : 25px;
+	/* line-height: 5px;
+	text-align: center; */
+	margin-top: 2px;
+	/* left            : 5px; */
+	/* top: 0px; */
+	right: 20px;
+	-webkit-filter: drop-shadow(0px 0px 0.4px rgba(255, 255, 255,1));
+	  filter: drop-shadow(0px 0px 0.4px rgba(255, 255, 255,1));
+  }
+  
+.menu .menu-items .menu-item.selected > img {
+	opacity         : 1.0;
+}
+
+.menu .menu-items .menu-item.selected {
+	/* background: rgba(255, 255, 255, 0.1); */
+	background: var(--primaryColor);
+}

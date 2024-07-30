@@ -1,0 +1,183 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, div
+pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q,
+s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+figure, header, nav, section, article, aside, footer, figcaption {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+img{
+    max-width:100%;
+    max-height: 100%;
+    height:auto;
+}
+
+a {
+    text-decoration: none;
+    outline: 0;
+    border: none;
+    color: #fff;
+}
+  
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+p {
+	font: 400 1rem/1.75rem "Open Sans", sans-serif;
+}
+
+@font-face {
+    font-family: vladimir; 
+    src: url('./VLADIMIR.TTF');
+} 
+
+#container {
+    position: absolute;
+    top: 50%;
+    transform: translate(-0%, -50%);
+    margin-left: 20px;
+}
+
+#licenses {
+    margin-top: 14px;
+}
+
+.businesscard {
+    width: 280px;
+    height: 170px;
+    background-color: #fff;
+    background-size: 280px 170px;
+    border-radius: 8px;
+    padding: 20px 25px;
+    margin-top: 10px;
+    box-shadow: 0px 0px 8px #0f0f0f77;
+}
+
+#business-head {
+    padding-bottom: 6px;
+    font-family: 'Montserrat';
+    font-size: 10px;
+    color: #012f40;
+    width: calc(100% - 32px);
+    border-bottom: 4px solid #00678d;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+#business-hdesc {
+    margin-left: 8px;
+    color: #065a79;
+}
+
+#business-head .fas {
+    font-size: 20px;
+    margin-right: 7px;
+}
+
+#business-bottom-cont {
+    margin-top: 20px;
+    font-family: 'Work Sans';
+    font-size: 20px;
+    color: #012f40;
+}
+
+#business-bottom-cont h5 {
+    font-family: 'Work Sans';
+    color: #bde8f8;
+    padding: 2px 0px;
+}
+
+#business-bottom-cont span {
+    font-family: 'Work Sans';
+    color: #065a79;
+    padding: 2px 0px;
+}
+
+#businessname {
+    color: #f8f8f8 !important;
+    font-size: 25px;
+    line-height: 0.9;
+}
+
+#framelogo {
+    margin-top: 8px;
+    border-radius: 8px;
+    margin-left: -5px;
+}
+
+.newidcard {
+    width: 280px;
+    height: 170px;
+    background-color: #fff;
+    margin-top: 10px;
+    background-size: 280px 170px;
+    border-radius: 8px;
+    padding: 20px 25px;
+    box-shadow: 0px 0px 8px #0f0f0f77;
+}
+
+#idheader {
+    display: flex;
+    align-items: center;
+    font-family: 'Montserrat';
+    font-size: 10px;
+    padding-bottom: 6px;
+    border-bottom: 4px solid #00678d;
+}
+
+#idstate {
+    color: #012f40;
+}
+
+#idname {
+    margin-left: 10px;
+    color: #065a79;
+}
+
+#photodiv {
+    margin-top: 15px;
+}
+
+#idsignature {
+    margin-top: 10px;
+    font-size: 12px;
+    font-family: 'vladimir', cursive;
+    color: rgb(6, 6, 71);
+}
+
+#idbottomcontent {
+    display: flex;
+}
+
+#idcontent {
+     margin-top: 15px;
+     margin-left: 18px;
+     font-family: 'Work Sans';
+}
+
+#idtext {
+    color: #012f40;
+}
+
+#idtextlic {
+    margin-top: 5px;
+    background-color: #012f40;
+    color: #dddddd;
+    padding: 2px 6px;
+    border-radius: 2px;
+    font-size: 10px;
+}
+
+#idtextlic2 {
+    margin-top: 2.5px;
+}

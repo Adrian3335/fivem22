@@ -1,0 +1,56 @@
+@import url('https://fonts.cdnfonts.com/css/din-pro-cond');
+
+.info-container {
+    background-color: rgba(20, 21, 23, 0.9);
+    color: rgba(240,240,240,0.9);
+    position: absolute;
+    display: flex;
+    width: 30%;
+    max-width: 20rem;
+    max-height: 35rem;
+    border-radius: 4px;
+}
+
+.info-header {
+    width: 100%;
+    position: relative;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+}
+
+.info-brand {
+    font-family: 'DIN Pro Cond Bold', sans-serif;
+    text-transform: uppercase;
+    font-size: 2.3rem;
+    padding-top: 2%;
+    margin-left: 5%;
+    font-style: italic;
+}
+
+.info-name {
+    font-family: 'DIN Pro Cond', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin-left: 5%;
+}
+
+.info-class {
+    font-family: 'DIN Pro Cond Bold', sans-serif;
+    text-transform: uppercase;
+    font-size: 4.5rem;
+    margin-right: 2%;
+}
+
+.info-field {
+    font-family: 'DIN Pro Cond Bold', sans-serif;
+    text-transform: uppercase;
+}
+
+.buyButton {
+    &:disabled,
+    &[data-disabled] {
+        border-color: light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-4));
+        background-color: var(--mantine-color-dark-7);
+    }
+}
