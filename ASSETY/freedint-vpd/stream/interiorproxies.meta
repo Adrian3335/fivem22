@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SInteriorOrderData>
+  <startFrom value="1120" />
+  <proxies>
+	<Item>hw1_vpd_main_milo_</Item>
+	<Item>hw1_vpd_gar_milo_</Item>
+  </proxies>
+</SInteriorOrderData>
