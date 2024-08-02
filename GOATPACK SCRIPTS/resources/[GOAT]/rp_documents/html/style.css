@@ -1,0 +1,579 @@
+html,
+body {
+     user-select: none;
+}
+
+:root {
+  --primaryColor: #00ff80;
+}
+
+
+#mainCard {
+  display: none;
+}
+
+.id-card {
+  display: block;
+  position: absolute;
+  flex-direction: column;
+  top: 515px;
+  right: 10px;
+  width: 300px;
+  background: linear-gradient(90deg, rgba(39, 39, 39, 0.75) 1.87%, rgba(39, 39, 39, 0.15) 100%);
+  border-radius: 25px;
+  font-family: "Poppins", sans-serif;
+  padding: 20px 30px;
+  color: rgb(255, 255, 255);
+  justify-content: center;
+  align-items: center;
+  background: url(images/dowod.png) center  right no-repeat rgb(39,39,39,0.6);
+  position: absolute;
+  overflow: hidden;
+  
+}
+
+#progbar {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+  height: 2%;
+  width: 10%;
+  background-image: repeating-linear-gradient(45deg, var(--primaryColor), var(--primaryColor));
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+
+
+.id-card .title {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.id-card .title .title-inner {
+  width: 100%;
+}
+
+.id-card .title .title-inner h1 {
+  font-size: 20px;
+  line-height: 15px;
+  color: var(--primaryColor);
+}
+
+.id-card .title .title-inner h2 {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 3px;
+}
+
+.id-card .title .title-icon .icon-inner {
+  background-image: repeating-linear-gradient(45deg, var(--primaryColor), var(--primaryColor));
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.id-card .title .title-icon .icon-inner .fa-regular {
+  font-size: 25px;
+}
+
+.id-card .content {
+  width: 100%;
+}
+
+.id-card .content p {
+  color: rgb(190, 190, 190);
+  font-size: 12px;
+  width: 100%;
+  margin-bottom: 4px;
+}
+
+
+
+.id-card .content .content-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.phone-card {
+  display: block;
+  position: absolute;
+  flex-direction: column;
+  top: 515px;
+  right: 10px;
+  width: 300px;
+  background: linear-gradient(90deg, rgba(39, 39, 39, 0.75) 1.87%, rgba(39, 39, 39, 0.15) 100%);
+  border-radius: 25px;
+  font-family: "Poppins", sans-serif;
+  padding: 20px 30px;
+  color: rgb(255, 255, 255);
+  background: url(images/phone.png) center  right no-repeat rgb(39,39,39,0.6);
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+
+
+.phone-card .title {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.phone-card .title .title-inner {
+  width: 100%;
+}
+
+.phone-card .title .title-inner h1 {
+  font-size: 20px;
+  line-height: 15px;
+  color: var(--primaryColor);
+}
+
+.phone-card .title .title-inner h2 {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 3px;
+}
+
+.phone-card .title .title-icon .icon-inner {
+  background-image: repeating-linear-gradient(45deg, var(--primaryColor), var(--primaryColor));
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.phone-card .title .title-icon .icon-inner .fa-regular {
+  font-size: 25px;
+}
+
+.phone-card .content {
+  width: 100%;
+}
+
+.phone-card .content p {
+  color: rgb(190, 190, 190);
+  font-size: 12px;
+  width: 100%;
+  margin-bottom: 4px;
+}
+
+
+
+.phone-card .content .content-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.ambulance-card {
+  display: block;
+  position: absolute;
+  flex-direction: column;
+  top: 515px;
+  right: 10px;
+  width: 300px;
+  background: linear-gradient(90deg, rgba(189, 7, 7, 0.75) 1.87%, rgba(255, 255, 255, 0.76) 100%);
+  border-radius: 25px;
+  font-family: "Poppins", sans-serif;
+  padding: 20px 30px;
+  color: rgb(255, 255, 255);
+  background: url(images/ems.png) center  right no-repeat rgba(104, 104, 104, 0.411);
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+
+
+.ambulance-card .title {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.ambulance-card .title .title-inner {
+  width: 100%;
+}
+
+.ambulance-card .title .title-inner h1 {
+  font-size: 20px;
+  line-height: 15px;
+  color: #eb0404;
+  text-shadow: 0px 1px 21px #ff11002a;
+}
+
+.ambulance-card .title .title-inner h2 {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 3px;
+}
+
+.ambulance-card .title .title-icon .icon-inner {
+  background-image: repeating-linear-gradient(45deg, #ff0000, rgba(255, 255, 255, 0.425));
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ambulance-card .title .title-icon .icon-inner .fa-regular {
+  font-size: 25px;
+}
+
+.ambulance-card .content {
+  width: 100%;
+}
+
+.ambulance-card .content p {
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  width: 100%;
+  margin-bottom: 4px;
+}
+
+
+
+.ambulance-card .content .content-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.police-card {
+  display: block;
+  position: absolute;
+  flex-direction: column;
+  top: 515px;
+  right: 10px;
+  width: 300px;
+  background: linear-gradient(90deg, rgba(39, 39, 39, 0.75) 1.87%, rgba(39, 39, 39, 0.15) 100%);
+  border-radius: 25px;
+  font-family: "Poppins", sans-serif;
+  padding: 20px 30px;
+  color: rgb(255, 255, 255);
+  background: url(images/lspd.png) center  right no-repeat rgb(39, 39, 39,0.6);
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+
+
+.police-card .title {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.police-card .title .title-inner {
+  width: 100%;
+}
+
+.police-card .title .title-inner h1 {
+  font-size: 20px;
+  line-height: 15px;
+  color: #006eff;
+  text-shadow: 0px 1px 21px #0400ff49;
+}
+
+.police-card .title .title-inner h2 {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 3px;
+}
+
+.police-card .title .title-icon .icon-inner {
+  background-image: repeating-linear-gradient(45deg, #001aff, rgb(0, 137, 179));
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.police-card .title .title-icon .icon-inner .fa-regular {
+  font-size: 25px;
+}
+
+.police-card .content {
+  width: 100%;
+}
+
+.police-card .content p {
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  width: 100%;
+  margin-bottom: 4px;
+}
+
+
+
+.police-card .content .content-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.mechanik-card {
+  display: block;
+  position: absolute;
+  flex-direction: column;
+  top: 515px;
+  right: 10px;
+  width: 300px;
+  background: linear-gradient(90deg, rgba(39, 39, 39, 0.75) 1.87%, rgba(39, 39, 39, 0.15) 100%);
+  border-radius: 25px;
+  font-family: "Poppins", sans-serif;
+  padding: 20px 30px;
+  color: rgb(255, 255, 255);
+  background: url(images/lscm.png) center  right no-repeat rgb(39, 39, 39,0.6);
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+
+.mechanik-card .title {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.mechanik-card .title .title-inner {
+  width: 100%;
+}
+
+.mechanik-card .title .title-inner h1 {
+  font-size: 20px;
+  line-height: 15px;
+  color: #ff6600;
+  text-shadow: 0px 1px 21px #ffae0049;
+}
+
+.mechanik-card .title .title-inner h2 {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 3px;
+}
+
+.mechanik-card .title .title-icon .icon-inner {
+  background-image: repeating-linear-gradient(45deg, #ff6600, rgb(179, 176, 0));
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mechanik-card .title .title-icon .icon-inner .fa-regular {
+  font-size: 25px;
+}
+
+.mechanik-card .content {
+  width: 100%;
+}
+
+.mechanik-card .content p {
+  color: rgb(190, 190, 190);
+  font-size: 12px;
+  width: 100%;
+  margin-bottom: 4px;
+}
+
+
+.mechanik-card .content .content-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.doj-card {
+  display: block;
+  position: absolute;
+  flex-direction: column;
+  top: 515px;
+  right: 10px;
+  width: 300px;
+  background: linear-gradient(90deg, rgba(39, 39, 39, 0.75) 1.87%, rgba(39, 39, 39, 0.15) 100%);
+  border-radius: 25px;
+  font-family: "Poppins", sans-serif;
+  padding: 20px 30px;
+  color: rgb(255, 255, 255);
+  background: url(images/doj.png) center  right no-repeat rgb(39, 39, 39,0.6);
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+
+.doj-card .title {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.doj-card .title .title-inner {
+  width: 100%;
+}
+
+.doj-card .title .title-inner h1 {
+  font-size: 20px;
+  line-height: 15px;
+  color: #e28b09;
+  text-shadow: 0px 1px 21px #b87f04e1;
+}
+
+.doj-card .title .title-inner h2 {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 3px;
+}
+
+.doj-card .title .title-icon .icon-inner {
+  background-image: repeating-linear-gradient(45deg, #ffae00, rgb(197, 146, 6));
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.doj-card .title .title-icon .icon-inner .fa-regular {
+  font-size: 25px;
+}
+
+.doj-card .content {
+  width: 100%;
+}
+
+.doj-card .content p {
+  color: rgb(190, 190, 190);
+  font-size: 12px;
+  width: 100%;
+  margin-bottom: 4px;
+}
+
+/* .doj-card .content p span {
+  font-size: 15px;
+  font-weight: 800;
+  color: rgb(255, 255, 255);
+} */
+
+.doj-card .content .content-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.red {
+  color: #ff0000;
+}
+.green {
+  color: #00ff00;
+}
+
+.LSSD-card {
+  display: block;
+  position: absolute;
+  flex-direction: column;
+  top: 515px;
+  right: 10px;
+  width: 300px;
+  background: linear-gradient(90deg, rgba(39, 39, 39, 0.75) 1.87%, rgba(39, 39, 39, 0.15) 100%);
+  border-radius: 25px;
+  font-family: "Poppins", sans-serif;
+  padding: 20px 30px;
+  color: rgb(255, 255, 255);
+  background: url(images/lspd.png) center  right no-repeat rgb(39, 39, 39,0.6);
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+
+
+.LSSD-card .title {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.LSSD-card .title .title-inner {
+  width: 100%;
+}
+
+.LSSD-card .title .title-inner h1 {
+  font-size: 20px;
+  line-height: 15px;
+  color: #cf6400;
+  text-shadow: 0px 1px 21px #db86077a;
+}
+
+.LSSD-card .title .title-inner h2 {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 3px;
+}
+
+.LSSD-card .title .title-icon .icon-inner {
+  background-image: repeating-linear-gradient(45deg, #ff9100, rgb(179, 152, 0));
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.LSSD-card .title .title-icon .icon-inner .fa-regular {
+  font-size: 25px;
+}
+
+.LSSD-card .content {
+  width: 100%;
+}
+
+.LSSD-card .content p {
+  color: rgb(190, 190, 190);
+  font-size: 12px;
+  width: 100%;
+  margin-bottom: 4px;
+}
+
+
+
+.LSSD-card .content .content-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}

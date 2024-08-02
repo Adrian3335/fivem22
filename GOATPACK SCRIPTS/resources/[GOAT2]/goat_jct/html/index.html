@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>goat_jobcenter</title>
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="icon" href="img/logo.png">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="js/main.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="icon">
+                <i class="fa-regular fa-briefcase"></i>
+            </div>
+            <div id="1" class="containerselect selected">
+                <div style='background-image: url("https://cdn.discordapp.com/attachments/1224836066704490596/1254554328677748876/image.png?ex=6679ea44&is=667898c4&hm=ed63eec9dc6bbbcae20d3c5db18475c17c1faf097c83af531eff2fa3a2ccea10&");' class="image-container"></div>
+                <div class="workname">Bezrobotny
+                    <div class="salary">200$/h</div>
+                    <div class="description">Jestem leniwy, nie ma pracy dla mnie, wolę  żebrać pieniądze na ulicy.</div>
+                </div>
+                <div class="button" onclick="set('unemployed')">Wybierz pracę</div>
+            </div>
+
+            <div id="2" class="containerselect">
+                <div style='background-image: url("https://cdn.discordapp.com/attachments/1224836066704490596/1254553807963033610/image.png?ex=6679e9c8&is=66789848&hm=59fb7d8281b77fc8215e2c716d7953f919d137a2011f58d6626e18ffc8149161&");' class="image-container"></div>
+                <div class="workname">SUSHI
+                    <div class="salary">250$/h</div>
+                    <div class="description">Lubisz sushi? Zawsze marzyłeś o zrobieniu sushi samemu? Jeśli tak to idealna praca dla ciebie nasz sushimaster wszystkiego cie nauczy!</div>
+                </div>
+                <div class="button" onclick="set('sushi')">Wybierz pracę</div>
+            </div>
+
+            <div id="3" class="containerselect">
+                <div style='background-image: url("https://cdn.discordapp.com/attachments/1224836066704490596/1254553931825156126/image.png?ex=6679e9e5&is=66789865&hm=6fd16087c3e888dcd8e41539a7964bd7b6987765092bce601ae168ee2e2e38ae&");' class="image-container"></div>
+                <div class="workname">Ogrodnik
+                    <div class="salary">250$/h</div>
+                    <div class="description">Jeśli kochasz zajmować się zieleniną , to udaj się do punktu na nawigacji i tam rozpicznij prace</div>
+                </div>
+                <div class="button" onclick="set('winemaker')"></div>
+            </div>
+
+            <div onclick="next('left')" class="arrow-left"><</div>
+            <div onclick="next('right')" class="arrow-right">></div>
+
+
+            <div class="text">URZAD</div>
+            <div class="text2">Pracy</div>
+    
+            <div id="name" class="hello">Witaj Bastian!</div>
+    
+            <div class="add1"></div>
+            <div class="add2"></div>
+            <div class="photo1"></div>
+            <div class="photo2"></div>
+        </div>
+    </body>
+</html>

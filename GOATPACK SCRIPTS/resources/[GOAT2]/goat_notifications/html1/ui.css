@@ -1,0 +1,427 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    font-family: "Poppins", sans-serif;
+}
+
+/* BODYCAM */
+.bodycam-notifs {
+    position: absolute;
+    top:7vh;
+    right: 0.6vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 20vh;
+    z-index: 300;
+    overflow: hidden;
+}
+.bodycam-notifs #bodycam {
+    box-sizing: border-box;
+    background-color: #00000080;
+    border-radius: 1vh;
+    padding: 0.5vh 0.8vh;
+    display: flex;
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+  .bodycam-notifs #bodycam img {
+    width: 6vh;
+    margin-left: 2vh;
+    object-fit: contain;
+  }
+  .bodycam-notifs #bodycam #data {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    line-height: 1.3vh;
+    margin: 0.5vh 0.5vh 0.5vh 1vh;
+    font-size: 0.9vh;
+  }
+  .bodycam-notifs #bodycam #dot {
+    font-size: 0.7vh;
+    display: inline-block;
+    transform: translateY(-0.05vh);
+    animation-name: dot;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+  .bodycam-notifs #faction-notifs {
+    height: 65vh;
+    width: 28vh;
+    margin-top: 1vh;
+    -webkit-mask-image: linear-gradient(to bottom, black 90%, rgba(0, 0, 0, 0) 100%);
+    -webkit-mask-size: 100% 100%;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: left top, left bottom;
+  }
+  .bodycam-notifs #faction-notifs #new-notifs {
+    overflow: hidden;
+    height: 65vh;
+  }
+  .bodycam-notifs #faction-notifs #all-notifs {
+    display: none;
+    height: 65vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  .bodycam-notifs #faction-notifs .pin {
+    position: absolute;
+    filter: invert(1);
+    top: 0.6vh;
+    right: 2.1vh;
+    width: 1.4vh;
+    height: 1.4vh;
+    margin-top: 0.3vh;
+    margin-left: 0.2vh;
+  }
+  .bodycam-notifs #faction-notifs .close {
+    position: absolute;
+    top: 0.8vh;
+    right: 0.8vh;
+    filter: invert(1);
+    width: 1vh;
+    height: 1vh;
+    margin-top: 0.3vh;
+    margin-left: 0.2vh;
+  }
+  .bodycam-notifs #faction-notifs #all-notifs::-webkit-scrollbar {
+    width: 0;
+  }
+  .bodycam-notifs #faction-notifs .notif {
+    box-sizing: border-box;
+    width: 28vh;
+    border-radius: 1vh;
+    background-color: #00000080;
+    color: white;
+    overflow: hidden;
+    opacity: 0;
+    margin-bottom: 0.5vh;
+    position: relative;
+  }
+  .bodycam-notifs #faction-notifs .notif .header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .bodycam-notifs #faction-notifs .notif .header .header-1 {
+    text-align: center;
+    border-radius: 0.5vh;
+    font-size: 1.1vh;
+    line-height: 2vh;
+    font-weight: 600;
+    padding: 0 0.7vh;
+  }
+  .bodycam-notifs #faction-notifs .notif .header .header-2 {
+    margin-left: 0.5vh;
+    font-size: 1.3vh;
+    line-height: 2vh;
+    font-weight: 600;
+  }
+  .bodycam-notifs #faction-notifs .notif .detail {
+    font-size: 1.1vh;
+    line-height: 1.5vh;
+    opacity: 0.75;
+    margin-top: 0.5vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .bodycam-notifs #faction-notifs .notif .detail img {
+    width: 1.3vh;
+    height: 1.3vh;
+    filter: invert(1);
+    margin-right: 0.5vh;
+    margin-left: 0.2vh;
+  }
+  .bodycam-notifs #faction-notifs .notif .text-box {
+    margin-top: 0.5vh;
+    padding: 0.3vh 0.5vh;
+    background-color: #ffffff20;
+    border-radius: 0.5vh;
+    font-size: 1.1vh;
+    opacity: 0.75;
+  }
+  
+  @keyframes dot {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+/* INTERACTION AND PROGRESS */
+.interactionAndProgressbar {
+    position: absolute;
+    bottom: 7vh;
+    left: 50vw;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+}
+
+.interactionAndProgressbar #interactions {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.interactionAndProgressbar #interactions .item-interaction {
+    width: 24vh;
+    height: 0;
+    margin-top: 1vh;
+    /* transform: skew(-10deg); */
+    background-color: #00000080;
+    border-radius: 0.5vh;
+    display: flex;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, height 0.3s ease-in-out, margin-bottom 0.3s ease-in-out;
+}
+
+.interactionAndProgressbar #interactions .item-interaction .interaction-image {
+    padding: 1vh;
+    border-radius: 0.5vh;
+    /* transform: skew(10deg); */
+    width: 3vh;
+    height: 3vh;
+}
+
+.interactionAndProgressbar #interactions .item-interaction .interaction-text {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    /* transform: skew(10deg); */
+    margin-left: 1.5vh;
+    height: 4.5vh;
+    margin-top: 0.2vh;
+}
+
+.interactionAndProgressbar #interactions .item-interaction .interaction-text .interaction-name {
+    color: white;
+    font-size: 1.4vh;
+    line-height: 1.8vh;
+    font-weight: 500;
+}
+
+.interactionAndProgressbar #interactions .item-interaction .interaction-text .item-name {
+    color: #ffffff80;
+    font-size: 1.2vh;
+    line-height: 1.6vh;
+    font-weight: 400;
+}
+
+.interactionAndProgressbar #interactions .item-interaction .interaction-text .interaction-name::first-letter, .interactionAndProgressbar #interactions .item-interaction .interaction-text #item-name::first-letter {
+    text-transform: capitalize;
+}
+
+.interactionAndProgressbar #progressbar {
+    background-color: #00000080;
+    width: 24vh;
+    height: 0;
+    /* transform: skew(-10deg); */
+    border-radius: 0.5vh;
+    transition: height ease-in-out 0.5s, opacity ease-in-out 0.5s;
+    overflow: hidden;
+}
+
+.interactionAndProgressbar #progressbar #progressbar-title {
+    /* transform: skew(10deg); */
+    color: white;
+    font-size: 1.2vh;
+    margin-left: 1vh;
+    line-height: 3vh;
+}
+
+.interactionAndProgressbar #progressbar #progressbar-bg {
+    /* transform: skew(10deg); */
+    background-color: #ffffff80;
+    width: 22vh;
+    height: 0.2vh;
+    margin-left: 1vh;
+}
+
+.interactionAndProgressbar #progressbar #progressbar-bg #progressbar-val {
+    height: 100%;
+    width: 0;
+    background-image: linear-gradient(90deg, #02E1A4, #E803EA);
+    background-size: 22vh 0.2vh;
+}
+
+.interactionAndProgressbar #oxygen {
+    background-color: #00000080;
+    width: 24vh;
+    height: 0;
+    transform: skew(-10deg);
+    border-radius: 0.5vh;
+    transition: height ease-in-out 0.5s, opacity ease-in-out 0.5s;
+    overflow: hidden;
+}
+
+.interactionAndProgressbar #oxygen #oxygen-icon {
+    transform: skew(10deg);
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.interactionAndProgressbar #oxygen #oxygen-icon img {
+    margin: 0 auto;
+    height: 2.5vh;
+}
+
+.interactionAndProgressbar #oxygen #oxygen-val {
+    margin: 0.5vh;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4vh;
+    width: 23vh;
+    background-image: linear-gradient(90deg, #02E1A4, #E803EA);
+    background-size: 24vh 0.2vh;
+    border-radius: 0.25vh;
+    transition: height ease-in-out 0.5s;
+}
+
+.pulsing {
+    animation-name: pulsing;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+  
+@keyframes pulsing {
+    0% {
+        transform: scale(1) skew(-10deg);
+    }
+    50% {
+        transform: scale(1.2) skew(-10deg);
+    }
+    100% {
+        transform: scale(1) skew(-10deg);
+    }
+}
+
+/* NOTIFICATION */
+#notifications {
+    position: absolute;
+    bottom: 22vh;
+    left: 1.5vw;
+    width: 14.1vw;
+    display: flex;
+    flex-direction: column-reverse;
+    transition: transform linear 0.5s;
+}
+
+#notifications .notification {
+    transform: skew(-10deg);
+    position: relative;
+    width: 100%;
+    background-color: #00000080;
+    border-radius: 0.5vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-top: 0.5vw;
+    animation-name: notificationIn;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    transition: height linear 0.3s, margin-top linear 0.3s;
+}
+
+#notifications .notification .notification-content {
+    transform: skew(10deg);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 100%;
+    margin-bottom: 1vh;
+    margin-top: 1vh;
+}
+
+#notifications .notification .notification-content .notification-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    vertical-align: middle;
+    margin: 0 0.8vw;
+}
+
+#notifications .notification .notification-content .notification-image img {
+    height: 3vh;
+    width: auto;
+}
+
+#notifications .notification .notification-content .notification-text {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-right: 0.5vw;
+}
+
+#notifications .notification .notification-content .notification-text .notification-line1 {
+    color: white;
+    font-size: 1.5vh;
+    font-weight: 500;
+}
+
+#notifications .notification .notification-content .notification-text .notification-line2 {
+    color: #ffffff80;
+    font-size: 1.2vh;
+    font-weight: 400;
+}
+
+#notifications .notification .notification-progress {
+    transform: skew(10deg);
+    margin: 0 5%;
+    width: 90%;
+    height: 0.2vh;
+    background-color: #ffffff80;
+    margin-bottom: 1vh;
+}
+
+#notifications .notification .notification-progress .notification-progress-value {
+    height: 100%;
+    width: 0%;
+    background-color: #0085FF;
+    animation-name: notification-value;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+  
+@keyframes notificationIn {
+    from {
+      transform: translateX(-17vw) skew(-10deg);
+    }
+    to {
+      transform: translateX(0) skew(-10deg);
+    }
+}
+
+@keyframes notificationOut {
+    from {
+      transform: translateX(0) skew(-10deg);
+    }
+    to {
+      transform: translateX(-17vw) skew(-10deg);
+    }
+}
+
+@keyframes notification-value {
+    from {
+      width: 0%;
+    }
+    to {
+      width: 100%;
+    }
+}

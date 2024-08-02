@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/src/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NUI React Boilerplate</title>
+    <script type="module" crossorigin src="./assets/index-9241c7d8.js"></script>
+    <link rel="stylesheet" href="./assets/index-213405c5.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      const Root = document.querySelector("#root");
+      window.addEventListener('message', (event) => {
+          if (event.data.action === 'updatecolor') {
+              Root.style.setProperty(
+                  "--primaryColor",
+                  event.data.color.primaryColor
+              );
+          }
+      });
+    </script>
+  </body>
+</html>

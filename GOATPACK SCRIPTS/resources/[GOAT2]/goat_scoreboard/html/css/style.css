@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    user-select: none;
+}
+
+
+:root {
+    --prmiaryColor: #0b88f5;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+    height: 100vh;
+    width: 100vw;
+
+    padding: 1vmin;
+}
+
+.scoreboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vmin;
+
+    background-image: linear-gradient(90deg, rgba(39, 39, 39, 0.904) 0%, rgba(0, 0, 0, 0.504) 100%);
+    box-shadow: inset 0 0 0 0.1vh rgba(255 255 255 / 5%);
+    padding: 2vmin;
+    border-radius: 1rem;
+    transform: translateY(-110%);
+    transition: transform .3s;
+}
+
+.scoreboard.open {
+    transform: translateY(0%);
+}
+
+.jobs, .status {
+    display: flex;
+    justify-content: center;
+    gap: 2vmin;
+}
+
+.job, .status-item {
+    display: flex;
+    align-items: center;
+    gap: 1vmin;
+
+    background: rgba(255, 255, 255, .1);
+    color: #fff;
+
+    font-size: 2vmin;
+    font-weight: 600;
+
+    padding-right: 1vmin;
+    border-radius: .5rem;
+}
+
+.job > i, .status-item > i, .code-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #7df721;
+    
+    font-size: 2vmin;
+
+    height: 4vmin;
+    width: 4vmin;
+
+    border-radius: .5rem;
+}
+
+.job.player {
+    font-size: 1.45vmin;
+    font-weight: 500;
+}
+
+.job.player > i {
+    background: #c2c2c240;
+    color: #c2c2c2;
+    box-shadow: inset 0 0 15px #c2c2c2;
+}
+
+.job.lspd > i {
+    background: #0084ff40;
+    color: #0084ff;
+    box-shadow: inset 0 0 15px #0084ff;
+}
+
+.job.ems > i {
+    background: #f8363640;
+    color: #f83636;
+    box-shadow: inset 0 0 15px #f83636;
+}
+
+.job.lsc > i {
+    background: #f8943640;
+    color: #f89436;
+    box-shadow: inset 0 0 15px #f89436;
+}
+
+.job.sheriff > i {
+    background: #f8db3640;
+    color: #f8db36;
+    box-shadow: inset 0 0 15px #f8db36;
+}
+
+.job.doj > i {
+    background: #36f8b740;
+    color: #36f8b7;
+    box-shadow: inset 0 0 15px #36f8b7;
+}
+
+.status-item.users > i {
+    background: #5a636040;
+    color: #b8b8b8;
+    box-shadow: inset 0 0 15px #b8b8b8;
+}
+
+.status-item.admins > i {
+    background: #be3bbe40;
+    color: #be3bbe;
+    box-shadow: inset 0 0 15px #be3bbe;
+}
+
+.code {
+    display: flex;
+    align-items: center;
+    gap: 1vmin;
+
+    background: #fff;
+    color: #fff;
+    
+    font-size: 1.45vmin;
+    font-weight: 500;
+    
+    padding-right: 1vmin;
+    border-radius: .5rem;
+}
+
+.code-icon {
+    background: #fff;
+    color: #fff;
+}
+
+.code-icon > i {
+    animation: pulse 1s infinite;
+}
+
+.code.green {
+    background: #08d30840;
+    color: #08d308;
+}
+
+.code.green > .code-icon {
+    background: #08d30840;
+    color: #08d308;
+    box-shadow: inset 0 0 15px #08d308;
+}
+
+.code.orange {
+    background: #d37b0840;
+    color: #d37b08;
+    
+}
+
+.code.orange > .code-icon {
+    background: #d37b0840;
+    color: #d37b08;
+    box-shadow: inset 0 0 15px #d37b08;
+}
+
+.code.red {
+    background: #d3080840;
+    color: #d30808;
+}
+
+.code.red > .code-icon {
+    background: #d3080840;
+    color: #d30808;
+    box-shadow: inset 0 0 15px #d30808;
+}
+
+.code.black {
+    background: #3f3f3f40;
+    color: #808080;
+}
+
+.code.black > .code-icon {
+    background: #3f3f3f40;
+    color: #808080;
+    box-shadow: inset 0 0 15px #808080;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1.0);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1.0);
+    }
+}

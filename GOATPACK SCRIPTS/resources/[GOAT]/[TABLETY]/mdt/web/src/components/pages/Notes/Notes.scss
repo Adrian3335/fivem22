@@ -1,0 +1,129 @@
+.notes-container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+}
+
+.notes {
+    width: 969px;
+    margin: 0 36px;
+    height: 100%;
+
+    .search-container {
+        width: 969px;
+        border-radius: 5px;
+        height: 28px;
+        background-color: #111925;
+        margin-bottom: 22px;
+        display: flex;
+        align-items: center;
+        padding-left: 5px;
+        font-size: 10px;
+        outline: none;
+        border: none;
+        color: rgba(255, 255, 255, 0.7);
+        &:focus {
+            outline: none;
+            border: none;
+        }
+    }
+
+    .container {
+        width: 969px;
+        border-radius: 10px;
+        height: 625px;
+        background-color: #111925;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 13px;
+
+        .notes-header {
+            font-size: 12px;
+            gap: 4px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 32px;
+            span {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                opacity: 0.5;
+            }
+        }
+
+        *::-webkit-scrollbar {
+            width: 2px;
+            
+        }
+        
+        *::-webkit-scrollbar-track {
+            margin-right: 10px;
+            background: #0D141F;
+            border: 2px solid #0D141F;
+        }
+        
+        *::-webkit-scrollbar-thumb {
+            background-color: #316BFF;
+            border: 2px solid #316BFF;
+        }
+
+        .notes-results {
+            width: 96%;
+            height: 553px;
+            display: flex;
+            justify-content: center;
+            overflow-y: scroll;
+
+            table {
+                border-spacing: 4px;
+                display: block;
+            }
+
+            .notes-row {
+                min-height: 28px;
+                height: 28px;
+                font-size: 10px;
+                margin-bottom: 7px;
+                td {
+                    background-color: #0D141F;
+                    span {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+            }
+
+        }
+
+        .buttons {
+            width: 969px;
+            display: flex;
+            justify-content: flex-end;
+            padding: 18px 42px;
+            align-items: center;
+
+            .btn {
+                width: 147px;
+                height: 33px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #316BFF;
+                border-radius: 5px;
+                color: black;
+                font-size: 10px;
+                &:hover {
+                    opacity: 0.7;
+                    cursor: pointer;
+                }
+            }
+        }
+
+    }
+}

@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --bgcolor: #0a0a0ad2;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: white;
+    user-select: none;
+}
+
+.Minigame {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--bgcolor);
+    padding: 2vh;
+    border-radius: 1vh;
+    width: 25vw;
+    height: 50vh;
+}
+
+.Loading {
+    display: block;
+    font-size: 2vh;
+}
+
+.Main {
+    display: none;
+    width: 100%;
+    height: 100%;
+    padding: 2vh;
+    text-align: center;
+}
+
+.Items {
+    position: relative;
+    width: 100%;
+    height: 85%;
+    border: 1px solid white;
+    border-radius: 1vh;
+    margin-top: 1vh;
+}
+
+.item {
+    position: absolute;
+    background: center / contain no-repeat url('img/cash.png');
+    width: 5vh;
+    height: 5vh;
+    top: 50%;
+    left: 50%;
+    cursor: pointer;
+}
+
+.item:hover {
+    filter: brightness(105%);
+}
+
+.Bar {
+    position: absolute;
+    width: 85%;
+    background-color: white;
+    height: 3px;
+    border-radius: 1vh;
+    bottom: 4%;
+}

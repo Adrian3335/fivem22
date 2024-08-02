@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Flecca - HACK DOOR ( FIVE CITY )</title>
+
+		<link rel="stylesheet" href="./css/style.css" />
+		<script src="./script/script.js" defer></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="hackBox">
+
+				<div class="hackInfo">
+					<h2 id="textInfo"></h2>
+				</div>
+				<div class="hackText">
+					<h2 id="textInfoUp"></h2>
+				</div>
+
+				<div id="hackId" class="hackFunction"></div>
+				<div id="hackCount" class="hackFunction2">
+					<input
+						onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+						class="input"
+						placeholder=""
+					/>
+				</div>
+
+				<div class="hackFooter">
+					<div class="hackCount2">
+						<h3><span id="levelHack"></span>/5</h3>
+					</div>
+
+					<div id="progressBox">
+						<div class="progressBox">
+							<div class="progressBar" id="progress-bar"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

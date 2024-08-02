@@ -1,0 +1,250 @@
+* {
+  	margin: 0;
+  	padding: 0;
+  	user-select: none;
+  	overflow: hidden;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+body {
+	position: absolute;
+	background: transparent;
+	width: 100%;
+	height: 100%;
+}
+
+.theory-menu {
+	display: none;
+	position: relative;
+	width: 50vh;
+	height: 60vh;
+	background: rgb(21, 21, 36);
+	box-shadow: 0px 0px 55px rgb(21, 21, 36);
+	padding: 2vh 4vh;
+	border-radius: 20px;
+	color: white;
+	margin-inline: auto;
+	translate: 0vh 17vh;
+}
+
+
+.good-result-menu, .bad-result-menu {
+	display: none;
+}
+
+.result-icon {
+	margin-block: 5vh;
+	height: 18vh;
+	width: 18vh;
+	border-radius: 100vh;
+	font-size: 8.5vh;
+	margin-inline: auto;
+	text-align: center;
+}
+
+.good-result {
+	background: #0cca55;
+	filter: drop-shadow(0px 0px 36px rgba(12, 202, 85, 45%));
+	line-height: 19vh;
+}
+
+.bad-result {
+	background: #e72020;
+	filter: drop-shadow(0px 0px 36px rgba(231, 32, 32, 45%));
+	line-height: 22vh;
+}
+
+.result-title {
+	text-align: center;
+    font-size: 5vh;
+    font-weight: 700;
+}
+
+.result-percentage {
+    text-align: center;
+    font-size: 2.5vh;
+    font-weight: 700;
+}
+
+.result-description {
+    text-align: center;
+    font-weight: 200;
+    max-width: 70%;
+    margin-inline: auto;
+}
+
+.good-result-close, .bad-result-close {
+	position: absolute;
+	bottom: 3vh;
+	width: 81%;
+	text-align: center;
+	font-size: 2vh;
+	padding: .4vh 1.35vh;
+	border-radius: 30px;
+	font-weight: 700;
+	background: #f5f5f528;
+	transition: 0.25s;
+}
+
+.good-result-close:hover, .bad-result-close:hover {
+	background: #f5f5f579;
+}
+
+.question-menu {
+	display: none;
+}
+
+.theory-image {
+	width: 70%;
+    height: 20vh;
+    border-radius: 1.8vh;
+    margin-top: 2vh;
+    margin-inline: auto;
+	backdrop-filter: drop-shadow(rgb(12 12 22) 0px 0px 15px);
+}
+
+.theory-image > img {
+	width: 100%;
+    height: 100%;
+}
+
+.theory-progress {
+	margin-block: .8vh;
+}
+
+.theory-questions-info {
+	font-size: 2.2vh;
+	font-weight: 700;
+	margin-block: 5px;
+}
+
+.theory-progress-bar {
+	width: 100%;
+	height: 10px;
+	background: rgb(48, 48, 70);
+	border-radius: 50px;
+}
+
+.theory-progress-done {
+	width: 0%;
+	height: 100%;
+	background: #0cca55;
+}
+
+.theory-question {
+	font-size: 1.6vh;
+	margin-block: 3vh;
+}
+
+input {
+	appearance: none;
+	border-radius: .5vh;
+	margin-inline: .5vh;
+	rotate: 45deg;
+	width: 1.6vh;
+	height: 1.6vh;
+	border: .2vh solid #ffffffa6;
+	transition: 0.2s all linear;
+	position: relative;
+	top: .4vh;
+}
+  
+input:checked {
+	border-color: #0cca55;
+}
+
+.theory-bottom {
+	position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 87.5%;
+    bottom: 3vh;
+}
+
+.theory-bottom > .theory-next {
+	font-size: 2vh;
+    padding: 0.4vh 1.35vh;
+    border-radius: 30px;
+    margin-left: auto;
+    font-weight: 700;
+    background: rgb(12, 202, 85);
+}
+
+.theory-bottom > .theory-next > i {
+	font-size: initial;
+}
+
+
+.tasks-menu {
+    display: none;
+    position: absolute;
+    color: white;
+    top: 20vh;
+    right: 3vh;
+    background: #373649d2;
+    width: 33.5vh;
+    border-radius: 10px;
+}
+
+.top-bar {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background: #5f5d7c;
+    padding-inline: 1.2vh;
+    padding-block: 10px;
+}
+
+.top-bar > .title-infos {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+}
+
+.top-bar > .title-name {}
+
+.top-bar > .task-percentage {}
+
+.bar-percentage {
+    height: 6px;
+    width: 100%;
+    background: #252430ec;
+    border-radius: 50px;
+    margin-top: 7px;
+}
+
+.done-percentage {
+    border-radius: 50px;
+    background: rgba(89, 216, 255, 0.918);
+    height: 100%;
+}
+
+.tasks-list {
+    padding-inline: 1.2vh;
+    margin-block: 10px;
+}
+
+.tasks-list > div {
+    display: flex;
+    justify-content: space-between;
+    margin-block: 5px;
+}
+
+.task-done {
+    color: rgba(255, 255, 255, 0.726) !important;
+    text-decoration: line-through !important;
+}
+
+.task-done-icon {
+
+}
+
+.task-done-icon > i {
+    color: rgb(47, 255, 109);
+}
+
+.task-todo {
+}
+
+.task-todo-count > i {
+	color: rgba(255, 255, 255, 0.253);
+}

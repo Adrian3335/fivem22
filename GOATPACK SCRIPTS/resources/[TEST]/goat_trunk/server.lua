@@ -1,0 +1,10 @@
+ESX = exports["es_extended"]:getSharedObject()
+RegisterServerEvent('kaiser_bagaznik:setIn', function(netId)           
+	local vehicle = NetworkGetEntityFromNetworkId(netId)
+	Entity(vehicle).state:set('taken', source, true)
+end)
+
+RegisterServerEvent('kaiser_bagaznik:setOut', function(netId)               
+	local vehicle = NetworkGetEntityFromNetworkId(netId)
+	Entity(vehicle).state:set('taken', nil, true)
+end)

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css">
+        <script src="../config/translations.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div class="theory-menu">
+            <div class="good-result-menu">
+                <div class="result-icon good-result">
+                    <i class="fa-solid fa-thumbs-up"></i>
+                </div>
+                <div class="result-infos">
+                    <div class="result-title">translate.good_result_title</div>
+                    <div class="result-percentage"><span id="your_score">translate.your_score</span> <span id="score"></span></div>
+                    <div class="result-description">translate.good_result_description</div>
+                </div>
+                <div class="good-result-close">
+                    <span>translate.good_result_close</span>
+                </div>
+            </div>
+            <div class="bad-result-menu">
+                <div class="result-icon bad-result">
+                    <i class="fa-solid fa-thumbs-down"></i>
+                </div>
+                <div class="result-infos">
+                    <div class="result-title">translate.bad_result_title</div>
+                    <div class="result-percentage"><span id="your_score">translate.your_score</span> <span id="score"></span></div>
+                    <div class="result-description">translate.bad_result_description</div>
+                </div>
+                <div class="bad-result-close">
+                    <span>translate.bad_result_close</span>
+                </div>
+            </div>
+            <div class="question-menu">
+                <div class="theory-image"></div>
+                <div class="theory-progress">
+                    <div class="theory-questions-info">
+                        <span class="question-text">translate.question</span> <span class="current"></span>/<span class="max"></span>
+                    </div>
+                    <div class="theory-progress-bar">
+                        <div class="theory-progress-done"></div>
+                    </div>
+                </div>
+                <div class="theory-question"></div>
+                <form id="question-form">
+                    <div id="a-answer">
+                        <input type="radio" name="question" id="a" value="A">
+                        <label class="a"></label>
+                    </div>
+                    <div id="b-answer">
+                        <input type="radio" name="question" id="b" value="B">
+                        <label class="b"></label>
+                    </div>
+                    <div id="c-answer">
+                        <input type="radio" name="question" id="c" value="C">
+                        <label class="c"></label>
+                    </div>
+                    <div id="d-answer">
+                        <input type="radio" name="question" id="d" value="D">
+                        <label class="d"></label>
+                    </div>
+                </form>
+                <div class="theory-bottom">
+                    <div class="theory-next">
+                        <i class="fa-solid fa-circle-right"></i>
+                        <span>translate.next_question</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tasks-menu">
+            <div class="top-bar">
+                <div class="title-infos">
+                    <div id="title-name">translate.exam_practicaly</div>
+                </div>
+                <div class="bar-percentage">
+                    <div class="done-percentage"></div>
+                </div>
+            </div>
+            <div class="tasks-list">
+                
+            </div>
+        </div>
+        <script src="questions.js" type="text/javascript"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+        <script src="app.js" type="text/javascript" defer="defer"></script>
+    </body>
+</html>

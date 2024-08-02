@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+html, body {
+  position: relative;
+  scroll-behavior: smooth;
+  outline: 0;
+  font-weight: 300;
+  color: white;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.transition * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+}
+
+.container {
+  height: 100vh;
+  display:none;
+}
+
+.radio-container {
+  position: absolute;
+  bottom: -110vh;
+  right: 5vh;
+}
+
+.radio {
+  width: 18vh;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  transform: scale(1.5);
+}
+
+#submit {
+  position: absolute;
+  width: 2.2vh;
+  height: 3.2vh;
+  bottom: 1.8vh;
+  left: 4.3vh;
+  border-radius: 5px;
+  transition: all 0.3s;
+  background-color: rgba(0, 255, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#submit:hover {
+  cursor: pointer;
+  background-color: rgba(0, 255, 0, 0.5);
+}
+
+#disconnect {
+  position: absolute;
+  width: 2.2vh;
+  height: 3.2vh;
+  bottom: 1.8vh;
+  right: 4.3vh;
+  border-radius: 5px;
+  transition: all 0.3s;
+  background-color: rgba(255, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#disconnect:hover {
+  cursor: pointer;
+  background-color: rgba(255, 0, 0, 0.5);
+}
+
+.channel {
+  position: absolute;
+  bottom: 11vh;
+  left: 4.6vh;
+  background: none;
+}
+
+::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.channel span {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.channel input {
+  text-align: center;
+  border: none;
+  font-size: 25px;
+  background: none;
+  outline: none;
+  width: 5vw;
+}
+
+::-webkit-inner-spin-button {
+  display: none;
+}

@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: "Montserrat", sans-serif;
+}
+
+:root {
+    --primaryColor: #ff8400;
+  }
+  
+
+body {
+    display: none;
+}
+
+.radioContainer {
+    display: none;
+    min-width: 20vh;
+    background-color: #010102d2;
+    box-shadow: inset 0 0 15px #444444;
+    position: absolute;
+    padding: 8px;
+    left: 1.0%;
+    bottom: 35%;
+    border-radius: 5px;
+}
+
+.radioInfo {
+	background-color: #111113;
+    box-shadow: inset 0 0 25px var(--primaryColor);
+    border: 1px solid  var(--primaryColor);
+    border-radius: 5px;
+    padding: .5vh .5vw;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.radioInfo > .left {
+    display: flex;
+}
+
+.radioInfo > .left > div {
+    margin-left: .5vw;
+    font-weight: 600;
+    font-size: .7vw;
+}
+
+.radioInfo > .right {
+    display: flex;
+}
+
+.radioInfo > .right > div {
+    margin-left: .5vw;
+    font-weight: 600;
+    font-size: .7vw;
+}
+
+
+.radioUsers > .user .microphone-icon.active {
+    color: #00ff00;
+    animation: pulse 1s infinite;
+    text-shadow: 0 0 5px #00ff00;
+
+}
+
+.radioUsers > .user {
+    background-color: #44444457;
+    border: 1.5px solid #444444;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+    padding: 5px;
+    margin-top: 8px;
+}
+
+.radioUsers > .user .microphone-icon {
+    position: relative;
+    left: 3px;
+    margin-left: auto;
+    font-size: 13px;
+    margin-right: 5px; 
+    color: #ff0000; 
+}
+
+.radioUsers > .user .username {
+    transition: margin-right 0.3s ease;
+    margin-right: 0;
+}
+
+.radioUsers > .user.active .microphone-icon {
+    color: var(--primaryColor);
+}
+
+.radioUsers > .user.active .username {
+    margin-right: 0px; 
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+        
+    }
+}

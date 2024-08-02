@@ -1,0 +1,44 @@
+<html lang="pl">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="main.css">
+	<script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="css/styles.css">
+	<script src="uikit/uikit.js"></script>  
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-contextmenu/2.7.1/jquery.contextMenu.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-contextmenu/2.7.1/jquery.ui.position.js"></script>   
+	<script>
+		$(function () {
+			$("#dialog").dialog({
+				autoOpen: false,
+				clickOutside: true
+			});
+		});
+	</script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<main id="main">
+		<div class="title">Kategorie</div>
+		<div class="categories"></div>
+		<div class="separator"></div>
+		<div class="legend">
+			<p><b>🠉/🠋/SCROLL</b> - wybór kategorii</p>
+			<p><b>🠈/BACKSPACE/ESC/PPM</b> - powrót do poprzedniej kategorii</p>
+			<p><b>🠊/ENTER/LPM</b> - wejście do kategorii lub potwierdzenie wyboru</p>
+			<p><b>LEFT SHIFT</b> - potwierdzenie transakcji</p>
+  		</div>
+	</main>
+	<div class="cart"></div>
+
+	<div id="dialog">
+		<div id="nearPlayers"></div>
+	</div>
+  	<script src="main.js"></script>
+</body>
+</html>

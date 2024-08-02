@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-user-select: none;
+}
+
+html, body {
+	font-family: Poppins, sans-serif;
+	height: 100%;
+}
+
+/* showHelpNotify */
+
+#uihelp {
+	position: absolute;
+	top: 1%;
+	left: 45px;
+}
+
+#wrapperhelp {
+	height: auto;
+	margin-bottom: 10px;
+	min-width: 275px;
+	margin: 0 0 8px 0;
+	border-radius: 10px;
+	
+	/* style */
+	background-color: rgba(0, 0, 0, 0.5);
+	color: #ffffff;
+	
+	padding: 5px 5px 5px 5px;
+	margin-bottom: 5px;
+	
+	/* border  */
+	/* border-left: 4px solid #969696; */
+}
+
+#mainhelp {
+	margin: 12px 16px 12px 56px;
+	position: relative;
+}
+
+#mainhelp::before {
+	font-size: 24px;
+	top: calc(50% - 12px);
+	left: -40px;
+	line-height: 24px;
+	position: absolute;
+	
+	font-family: "Font Awesome 5 Free";
+	content: "\f05a";
+	color: #969696;
+	font-size: 28px;	
+}
+
+#messagehelp {
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.active {
+	opacity: 1;
+	animation: fadeInLeft;
+	animation-duration: 1s;
+}
+
+.hiding {
+	opacity: 0;
+	animation: fadeOutLeft;
+	animation-duration: 1s;
+}
+
+/* transfer colors  */
+
+#messagehelp .w,
+#messagehelp .s {
+    color: #fff;
+}
+
+#messagehelp .u {
+    color: #000000;
+}
+
+#messagehelp .r {
+    color: #ef075d;
+}
+
+#messagehelp .g {
+    color: #a3ff12;
+}
+
+#messagehelp .b {
+    color: #0099cc;
+}
+
+#messagehelp .y {
+    color: #ffcc00
+}
+
+#messagehelp .o {
+    color: #F76A2E;
+}
+
+#messagehelp .p {
+    color: #651FFF;
+}
+
+#messagehelp .h {
+    font-weight: bold;
+}
+
+#messagehelp h1 {
+	display: inline-block;
+	font-size: 16px;
+	font-weight: 600;
+	
+	padding-left: 4px;
+	padding-right: 4px;
+	
+	text-align: center;
+    background: rgba(255, 255, 255, 0.25);
+	border-radius: 0.3vh;
+	
+}

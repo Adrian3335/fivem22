@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>s4-house</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" ></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js" ></script>
+    <script src="s4.js" ></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro-v6@18657a9/css/all.min.css">
+</head>
+<body style="display:none;">
+    
+    <div class="bg" style="display:none;"></div>
+    <div class="buy center" style="display:none;">
+
+        <div class="evb"><i class="fas fa-circle"><span id="h_no" >512</span></i> </div>
+        <div class="ev"></div>
+
+        <div class="house_info">
+
+            <span>Wlasciciel domu</span>
+            <h1 id="h_who" >NIKT</h1>
+
+            <div>
+            <div style="float: left;margin-right: 42px;">
+            <span>Ubezpieczenie</span>
+            <h1>0 Dni</h1>
+            </div>
+            <div>
+            <span>Ogrod / basen</span>
+            <h1 id="h_gp" style="font-size: 34px;margin-bottom: 54px;">Jest dostepny</h1>
+            </div>
+            </div>
+
+            <span style="margin-top: -10px;display: block;">Koszt</span>
+            <h1 id="h_price">$500,000 Jednorazowo</h1>
+
+
+            <div class="buttons">
+                <a href="#" data-s4="home"  >Dom</a>
+                <a href="#" data-s4="garage">Garaz</a>
+                <a href="#" id="h_friends" data-s4="friends">Przyjaciele</a>
+            </div>
+
+
+        </div>
+        
+        <div class="garage_info">
+            <div class="g">
+            <i class="far fa-garage"></i>
+            <span>Miejsca w garazu <b id="h_gstock" >9</b></span>
+            </div>
+            <a href="#" id="h_sell" data-s4="sell-house"> SPRZEDAJ DOM</a>
+            <a href="#" id="h_buy" data-s4="buy-house"> KUP DOM</a>
+        </div>
+
+        <div class="stars"><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star nostar"></i><i class="fas fa-star nostar"></i><i class="fas fa-star nostar"></i></div>
+
+    </div>
+
+    <div class="modal center" style="display:none;">
+        <div class="center">
+          <h1>WYBIERZ <br><y>Metode platnosci</y></h1>
+          <br>
+          <a href="#" data-s4="with-bank"><i class="fal fa-credit-card-blank"></i> Konto bankowe</a>
+          <a href="#" data-s4="with-cash"><i class="fal fa-wallet"></i> Gotowka</a>
+          <a href="#" data-s4="close-modal"><i class="fal fa-chevron-left"></i>Cofnij</a>
+          <br><br><br>
+          <a href="#">Twoje oszczednosci</a>
+          <a href="#" class="active" id="u_bank"> 500.000$</a>
+          <a href="#" class="active" id="u_cash"> 500.000$</a>
+           
+        </div>
+    </div>
+
+    <div class="friends center" style="display: none;" >
+        <h1>kto moze uzywac<br><y>twojego domu</y></h1>
+        <div class="ic center">
+
+            <div class="players">
+                <h1>Ludzie obok</h1>
+                <div class="plylst" id="all">
+
+                    <a class="pl">Test Test <i class="fa-thin fa-plus"></i></a>
+  
+                </div>
+            </div>
+            <div class="players">
+                <h1>Przyjaciele</h1>
+                <div class="plylst" id="friends">
+
+                </div>
+            </div>
+     
+        </div>
+        <a href="#" class="xcd" data-s4="close-and-save"><i class="fal fa-chevron-left"></i>Cofnij</a>
+    </div>
+
+    <div class="sellmodal center" style="display:none;">
+        <div class="center">
+          <h1>Wybierz  <br><y>metode wyplaty</y></h1>
+          <br>
+          <a href="#" data-s4="sell-with-bank"><i class="fal fa-credit-card-blank"></i> Konto bankowe</a>
+          <a href="#" data-s4="sell-with-cash"><i class="fal fa-wallet"></i> Gotowka</a>
+          <a href="#" data-s4="close-modal"><i class="fal fa-chevron-left"></i>Cofnij</a>
+          <br><br><br>
+
+          <h1>Cena sprzedazy <br><y id="h_sell_price"> </y></h1>
+        </div>
+    </div>
+
+    <div class="garagemodal center" style="display:none;">
+         <div class="icgm center">
+
+            <div style="position: relative;"><h1><w>Twoj</w>  Garaz  <w class="w" data-s4="close-gm" ><i class="fa-regular fa-xmark"></i></w></h1>
+            
+            <div class="cars">
+                <div class="car">
+                  <center>
+                   <img src="https://raw.githubusercontent.com/MericcaN41/gta5carimages/main/images/adder.png" />
+                  </center>
+                  <div class="alt">
+                      <h2>Adder</h2>
+                      <i class="fa-regular fa-garage-car"></i>
+                  </div>
+                </div>
+                <div class="car">
+                    <i class="fa-duotone fa-empty-set center"></i>
+                </div>
+                <div class="car">
+                    <i class="fa-duotone fa-empty-set center"></i>
+                </div>
+                <div class="car">
+                    <i class="fa-duotone fa-empty-set center"></i>
+                </div>
+                <div class="car">
+                    <i class="fa-duotone fa-empty-set center"></i>
+                </div>
+                <div class="car">
+                    <i class="fa-duotone fa-empty-set center"></i>
+                </div>
+            </div>
+
+
+
+         </div>
+    </div>
+   </div>
+
+
+   <div class="manage center" style="display:none;"> 
+    <div class="icgm center">
+
+        <div style="position: relative;"><h1><w>Zarzadzaj</w>  DOMEM  
+            
+            
+            <div class="sag_">
+                <w class="w" style="position: relative;cursor: cell;" data-s4="walls_" >Sciany</w>
+                <w class="w" style="position: relative;cursor: cell;"  data-s4="tables_" >Stoly</w>
+                <w class="w" style="position: relative;cursor: cell;"  data-s4="name_" >\Nazwa</w>
+            </div>
+            
+            <w class="w" data-s4="close_" ><i class="fa-regular fa-xmark"></i></w>
+        
+        </h1>
+
+
+        <div class="hname center" style="display:none;">
+            <center><h1><w>Nadaj nazwe</w>swojemu domowi</h1></center> 
+             <input type="text" max="10" maxlength="10" id="_hname" placeholder="Enter Name..." />
+             <a data-s4="hname" href="#">Zmien</a>
+        </div>
+ 
+
+        <div class="walls">
+             <div class="yar"><h2>Sciany</h2></div>
+
+             <div class="scrl">
+             <div class="wall" style="background: url(./interiors/modern.png);background-size: cover;"></div>
+           
+            </div>
+
+        </div>
+
+        <div class="tables" style="display:none;">
+            <div class="yar"><h2>Stoliki</h2></div>
+            <div class="scrl2">
+                <div class="table" style="background: url(./interiors/t1.png);background-size: cover;">
+                    <input type="text" placeholder="Enter Url" id="u_1" />
+                    <a data-s4="table" data-theme="1" href="#">Zmien</a>
+                </div>
+                <div class="table" style="background: url(./interiors/t2.png);background-size: cover;">
+                    <input type="text" placeholder="Enter Url" id="u_2" />
+                    <a data-s4="table" data-theme="2" href="#">Zmien</a>
+                </div>
+            </div>
+        </div>
+
+
+     </div>
+</div>
+   </div>
+
+   <div class="loading center" style="display:none;"><i class="fad fa-spinner-third center fa-spin"></i></div>
+
+
+   <div class="notif" style="display:none;">
+    
+  
+   </div>
+ 
+</body>
+</html>

@@ -1,0 +1,686 @@
+@font-face{
+    font-family:"Bebas Nue";
+    src:url("fonts/BebasNeuePro-Regular.ttf") format("truetype")
+  }
+  @font-face{
+    font-family:"Bebas Nue";
+    src:url("fonts/BebasNeuePro-Thin.ttf") format("truetype");
+    font-weight:100
+  }
+  @font-face{
+    font-family:"Bebas Nue";
+    src:url("fonts/BebasNeuePro-Light.ttf") format("truetype");
+    font-weight:200
+  }
+  @font-face{
+    font-family:"Bebas Nue";
+    src:url("fonts/BebasNeuePro-Middle.ttf") format("truetype");
+    font-weight:300
+  }
+  @font-face{
+    font-family:"Bebas Nue";
+    src:url("fonts/BebasNeuePro-Italic.ttf") format("truetype");
+    font-style:italic
+  }
+  @font-face{
+    font-family:"Bebas Nue";
+    src:url("fonts/BebasNeuePro-Bold.ttf") format("truetype");
+    font-weight:700
+  }
+  
+  
+
+.buy {
+    width: 800px;
+    height: 525px;
+    background: url(s4.png);
+    background-size: cover;
+    opacity: .9;
+}
+
+
+.center {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+  }
+
+.ev {
+    width: 200px;
+    height: 200px;
+    background: url(properties/1.png);
+    background-size: cover;
+    position: absolute;
+    left: 12%;
+    top: 7%;
+    box-shadow: 0px 0px 20px black;
+}
+
+.stars {
+    position: absolute;
+    left: 12%;
+    top: 50%;
+    font-size: 24px;
+}
+
+.nostar { 
+    margin-left:10px;
+    background: -webkit-linear-gradient(#515359, #515359);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0px 0px 4px #666666;
+}  
+
+.star {
+    margin-left:10px;
+    background: -webkit-linear-gradient(#31bc20, #1c8e44); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0px 0px 4px #31bc20;
+}
+
+.evb {
+    z-index: 5;
+    width: 125px;
+    height: 50px;
+    background: linear-gradient(0deg, #ffd132, #fbd233);
+    position: absolute;
+    left: 16.5%;
+    border-radius: 30px;
+    box-shadow: 0px 0px 18px #fbd233;
+}
+
+.evb i {
+    position: relative;
+    top: 34%;
+    left: 12%;
+    font-size: 16px;
+}
+
+.evb i span {
+    position: absolute;
+    font-size: 24px;
+    left: 30px;
+    top: -4px;
+    letter-spacing: 2px;
+}
+
+.house_info {
+    position: absolute;
+    top: 5%;
+    right: 10%;
+    width: 350px;
+    height: 400px;
+    padding-top: 40px;
+}
+
+.garage_info {
+    position: absolute;
+    bottom: 10%;
+    width: 250px;
+    height: 170px;
+    left: 9%;
+}
+
+.g {
+    font-family: "Bebas Nue";
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 12px;
+}
+
+.g i {
+    margin-right: 5px;
+}
+
+.garage_info a {
+    display: block;
+    text-align: center;
+    font-family: 'Bebas Nue';
+    letter-spacing: 3px;
+    color: white;
+    text-decoration: none;
+    background: #dd4d38;
+    padding: 14px;
+    border-radius: 5px;
+    margin: 30px;
+    font-size: 21px;
+    opacity: .9;
+    box-shadow: 0px 0px 14px #dd4d38;
+    text-shadow: 0px 0px 15px white;
+    font-weight: 300;
+    transition: .6s;
+}
+
+.garage_info a:hover {
+
+    background: white;
+    color: #dd4d38;
+    box-shadow: 0px 0px 14px white;
+
+}
+
+
+.house_info span {
+    font-size: 16px;
+    font-family: 'Bebas Nue';
+    letter-spacing: 3px;
+    color: #ffffffa6;
+    text-transform: uppercase;
+}
+
+.house_info h1 {
+    font-family: 'Bebas Nue';
+    letter-spacing: 5px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 43px;
+    margin-top: 8px;
+    font-weight: 300;
+    margin-bottom: 22px;
+}
+
+.buttons {float:right;margin-top: 10px;}
+
+.buttons a {
+    display: inline-block;
+    text-align: center;
+    background: #3663d4;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 24px;
+    font-family: 'Bebas Nue';
+    letter-spacing: 3px;
+    font-weight: 300;
+    margin-left: 2px;
+    padding: 10px;
+    text-transform: uppercase;
+    box-shadow: 0px 0px 10px #3663d4;
+    margin-right: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    transition: .6s;
+}
+
+.buttons a:hover {
+    background: #fff;
+    color: #3663d4;
+    box-shadow: 0px 0px 10px #fff;
+}
+
+ 
+body {margin:0;overflow: hidden;}
+
+.bg {
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    position: fixed;
+    background:radial-gradient(#3b9bb18f, #0000008c);
+}
+
+
+#h_buy {
+    background: #3663d4;
+    color: #fff; 
+    box-shadow: 0px 0px 14px #3663d4;
+}
+
+#h_buy:hover {
+    background:#fff;
+    color: #3663d4;  
+    box-shadow: 0px 0px 14px #fff;
+}
+
+
+.modal, .loading, .sellmodal, .garagemodal, .manage, .friends {
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    background: #000000c9;
+    backdrop-filter: blur(10px);
+}
+
+ 
+.modal h1, .sellmodal h1, .friends h1 {
+    color: white;
+    font-family: 'Bebas Nue';
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 40px;
+}
+
+.ic {
+    width: 50%;
+    height: 70%;
+ 
+}
+
+.players {
+    margin-left: 3.5%;
+    width: 45%;
+    height: 100%;
+    float: left;
+}
+
+.players h1 {
+    background: #dada25;
+    color: black;
+    margin:0;
+}
+
+.plylst {
+    width: 100%;
+    height: 100%;
+    background: #00000080;
+    overflow-y: auto;
+}
+
+.pl {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background: white;
+    display: block;
+    font-family: 'Bebas Nue';
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 24px;
+    line-height: 50px;
+    transition: .6s;
+
+}
+
+.pl:hover{
+    background: black;
+    color:white;
+}
+
+.pl i {
+    position: absolute;
+    right: 10px;
+    top: 25%;
+}
+
+
+y {color:#dada25;}
+
+.xcd {
+    position: absolute!important;
+    top: 3%;
+    left: 26.7%;
+ 
+    display: block;
+    text-align: center;
+    background: #ffffffed;
+    color: black;
+    text-decoration: none;
+    border-radius: 1px;
+    font-size: 24px;
+    font-family: 'Bebas Nue';
+    letter-spacing: 3px;
+    font-weight: 300;
+    margin-left: 2px;
+    margin-top: 20px;
+    padding: 10px;
+    text-transform: uppercase;
+    margin-right: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    transition: .6s;
+    border:1px solid white;
+}
+
+.modal a, .sellmodal a {
+    position: relative;
+    display: block;
+    text-align: center;
+    background: #ffffffed;
+    color: black;
+    text-decoration: none;
+    border-radius: 1px;
+    font-size: 24px;
+    font-family: 'Bebas Nue';
+    letter-spacing: 3px;
+    font-weight: 300;
+    margin-left: 2px;
+    margin-top: 20px;
+    padding: 10px;
+    text-transform: uppercase;
+    margin-right: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    transition: .6s;
+    border:1px solid white;
+}
+
+.modal a:hover,.sellmodal a:hover , .active {
+    background:#00000012!important;
+    color: #ffffffed!important;
+    border:1px solid white!important;
+}
+
+.modal a i, .sellmodal a i {
+    position: absolute;
+    left: 6%;
+    top: 28%;
+}
+
+.fa-spin {
+    color:white;
+    font-size: 24px;
+}
+
+.icgm {
+    width: 85%;
+    height: 700px;
+}
+
+.icgm h1 {
+    font-family: 'Bebas Nue';
+    color: white;
+    text-transform: uppercase;
+    font-size: 48px;
+    letter-spacing: 8px;
+    width: fit-content;
+    background: red;
+}
+
+w {
+    background: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: black;
+    text-shadow: 0px 0px 0px black;
+}
+
+.cars {
+    width: -webkit-fill-available;
+    height: 570px;
+    border: 2px dashed white;
+}
+
+.car {
+    float: left;
+    width: 300px;
+    height: 200px;
+    background: #ffffff26;
+    margin-left: 16px;
+    margin-top: 20px;
+    border: 1px dashed white;
+    position: relative;
+}
+
+.car img {
+    width: 70%;
+    margin: 12px;
+}
+
+.car .alt {
+    width: -webkit-fill-available;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    border-top: 1px dashed white;
+    overflow: hidden;
+}
+
+.car h2 {
+    font-size: 28px;
+    margin: 0;
+    color: white;
+    font-family: 'Bebas Nue';
+    letter-spacing: 2px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+
+
+.fa-garage-car {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 24px;
+    color: #183153;
+    background: #ffffffe8;
+    height: 100%;
+    width: 50px;
+    text-align: center;
+    line-height: 50px!important;
+    transition: .6s;
+    
+}
+
+.fa-garage-car:hover {
+    color: #ffffffe8;
+    background: #183153;
+}
+
+.fa-empty-set {
+    font-size: 72px;
+    color: white;
+}
+
+.w {
+    position: absolute;
+    right: 0;
+    padding-left: 15px;
+    transition: .1s;
+}
+
+.w:hover {
+    transform: skew(345deg);
+    box-shadow: 5px 5px 0px 0px red;
+}
+
+.walls, .tables {
+    width: 100%;
+    height: 600px;
+    border: 1px solid white;
+ 
+}
+
+.sag_ {
+    float: left;
+    margin-right: 5%;
+    display: inline;
+    position: absolute;
+    right: 0;
+}
+
+.yar {
+    position: absolute;
+    right: 0;
+    width: 156px;
+    height: 50px;
+    background: #ffffff;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 23% 100%);
+    text-align: center;
+    z-index:100;
+   
+}
+
+.yar h2{
+    font-family: 'Bebas Nue';
+    font-size: 44px;
+    margin: 0;
+    margin-left: 25px;
+    margin-right: 0px;
+    color: red;
+    font-style: italic;
+
+}
+
+.wall, .table {
+    width: 300px;
+    height: 250px;
+    border: 1px dashed white;
+    margin-left: 15px;
+    margin-top: 15px;
+    background: url(./interiors/aqua.png);
+    background-size: cover;
+    float: left;
+    position: relative;
+    transition: .6s;
+    z-index: 50;
+}
+
+.scrl {
+    /* width: 100%;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    height: 290px;
+    display: -webkit-inline-box; */
+ 
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+     
+  }
+  
+ 
+  ::-webkit-scrollbar-track {
+    background: #f1f1f155;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+ 
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+ 
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+
+.wall a, .table a, .hname a {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    display: block;
+    color: black;
+    text-shadow: 0px 0px 20px black;
+    font-family: 'Bebas Nue';
+    font-size: 38px;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: 800;
+    text-decoration: unset;
+    background: white;
+    transition: .6s;
+    letter-spacing: 2px;
+}
+
+.wall a:hover,  .table a:hover, .hname a:hover {
+    background: black;
+    color: white;
+    text-shadow: 0px 0px 20px white;
+}
+
+.table input, .hname input {
+    width: -webkit-fill-available;
+    font-size: 24px;
+    font-family: 'Bebas Nue';
+    font-style: italic;
+    position: absolute;
+    text-align: center;
+    background: #ffffff;
+    border: none;
+    padding: 5px;
+}
+
+.hname input {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 10px;
+    font-size: 40px;
+    background: unset;
+    border: 2px solid white;
+    color:white;
+}
+
+.notif {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 95px;
+    border: 2px dashed white;
+    clip-path: polygon(5% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+
+.notif a {
+    float: right;
+    text-align: center;
+    display: block;
+    color: white;
+    padding-left: 2%;
+    padding-right: 2%;
+    text-shadow: 0px 0px 20px white;
+    font-family: 'Bebas Nue';
+    font-size: 38px;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: 800;
+    text-decoration: unset;
+    border: 2px solid white;
+    transition: .6s;
+    letter-spacing: 2px;
+    position: relative;
+    top: 25%;
+    margin-right: 2%;
+}
+.notif a:hover {
+ 
+    color: black;
+ 
+    text-shadow: 0px 0px 20px black;
+ 
+    border: 2px solid white;
+    background:white;
+}
+
+.notif a i {
+    float: left;
+    margin-right: 15px;
+    font-size: 28px;
+    line-height: 43px;
+}
+
+.gs {
+    padding-left: 1%;
+    padding-right: 1.5%;
+}
+
+.gs i  {
+    float: unset!important;
+    margin-right: unset!important;
+    line-height: unset!important;
+}
+
+
+.hname {
+    z-index: 1000;
+    width: 60%;
+    height: 300px;
+    position: absolute;
+    background: #000000a3;
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 0px 18px 1px black;
+    border: 2px solid #ffffffad;
+}
